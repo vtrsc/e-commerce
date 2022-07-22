@@ -20,11 +20,15 @@ class WidgetCards extends StatelessWidget {
                 'assets/$pathimage',
                 height: 70,
               ),
-              const Text("Git"),
+               Text(tituloTecnologia),
             ],
           ),
         ),
       ),
     );
-  }
+  
+  
+}
+
+
 }
