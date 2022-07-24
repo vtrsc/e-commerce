@@ -76,6 +76,11 @@ flutter:
     -  assets/kubernetesLogo.png
     -  assets/htmlLogo.jpeg
     -  assets/photo.jpg
+    -  assets/marioGame.jpg
+    -  assets/appEC.jpg
+    -  assets/appCentral.jpg
+    -  assets/chatBot.jpeg
+    -  assets/conversorDeMoeda.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

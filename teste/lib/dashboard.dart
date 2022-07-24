@@ -2,6 +2,7 @@ import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:teste/MyClipper.dart';
+import 'package:teste/education.dart';
 import 'package:teste/midiaSocial.dart';
 import 'package:teste/profile.dart';
 import 'package:teste/ShapeDashboard.dart';
@@ -150,24 +151,29 @@ class MyDashboard extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: InkWell(
-                            onTap: () => Navigator.of(context).pop(),
-                              splashColor: Colors.blue,
+                           onTap: () =>  Navigator.push(
+                            context,
+                          MaterialPageRoute(
+                          builder: (context) => const education()),
+                           ),
+                            
                               child: Center(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: const [
                                     Icon(
                                       Icons.school_rounded,
-                                    
                                       size: 70,
                                       color: Colors.blue,
                                     ),
-                                    Text("education"),
+                                    Text("Education"),
                                   ],
                                 ),
                               ),
                             ),
+
                           ),
+                         
                           Card(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20),

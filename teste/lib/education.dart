@@ -1,15 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:teste/dashboard.dart';
+import 'package:flutter/src/foundation/key.dart';
+import 'package:flutter/src/widgets/framework.dart';
 import 'package:teste/ShapeDashboard.dart';
+import 'package:teste/dashboard.dart';
 
+class education extends StatefulWidget {
+  const education({Key? key}) : super(key: key);
 
-class profile extends StatelessWidget {
-  const profile({Key? key}) : super(key: key);
+  @override
+  State<education> createState() => _educationState();
+}
 
+class _educationState extends State<education> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
+     
+
+ body: Stack(
         children: [
           ClipPath(
             clipper: ShapeDashboard(),
