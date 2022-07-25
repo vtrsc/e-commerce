@@ -10,6 +10,7 @@ import 'package:teste/projects.dart';
 import 'package:teste/skills.dart';
 import 'package:teste/skillsMelhor.dart';
 import 'package:teste/work.dart';
+
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_print
 class MyDashboard extends StatelessWidget {
   const MyDashboard({Key? key}) : super(key: key);
@@ -26,67 +27,55 @@ class MyDashboard extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
                   gradient: LinearGradient(
-                colors: <Color>[  Color.fromARGB(255, 15, 23, 173).withOpacity(0.8),
-            Color.fromARGB(255, 15, 133, 232).withOpacity(0.9)],
+                colors: <Color>[
+                  Color.fromARGB(255, 15, 23, 173).withOpacity(0.8),
+                  Color.fromARGB(255, 15, 133, 232).withOpacity(0.9)
+                ],
               )),
             ),
           ),
-
           Center(
-          
-        
-          child: Column(
-            children: [
-              SizedBox(height: 40,),
-               Text(
-                        "Vitor Cicote",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 30,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-
-                        Text(
-                        "Developer",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-            ],
-          ),
-          ),
-
-         Center(
-            
             child: Column(
-                 
               children: [
-                SizedBox(height: 120,),
-                
-                CircleAvatar(
-            
+                SizedBox(
+                  height: 40,
+                ),
+                Text(
+                  "Vitor Cicote ",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  "Developer",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Center(
+              child: Column(
+            children: [
+              SizedBox(
+                height: 120,
+              ),
+              CircleAvatar(
                 radius: 60,
                 backgroundImage: AssetImage('assets/photo.jpg'),
-
-          
-          ),
-              ],
-            )
-            
-       ),
-
+              ),
+            ],
+          )),
           SafeArea(
             child: Padding(
-              
               padding: const EdgeInsets.only(top: 40.0),
               child: Column(
-            
                 children: [
-                 
-                 
                   const SizedBox(height: 160),
                   Expanded(
                     child: Padding(
@@ -102,11 +91,11 @@ class MyDashboard extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: InkWell(
-                             onTap: () =>  Navigator.push(
-                            context,
-                          MaterialPageRoute(
-                          builder: (context) =>  profile()),
-                           ),
+                              onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => profile()),
+                              ),
                               splashColor: Colors.blue,
                               child: Center(
                                 child: Column(
@@ -125,12 +114,11 @@ class MyDashboard extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: InkWell(
-                           onTap: () =>  Navigator.push(
-                            context,
-                          MaterialPageRoute(
-                          builder: (context) => const work()),
-                           ),
-                            
+                              onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const work()),
+                              ),
                               child: Center(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -151,12 +139,11 @@ class MyDashboard extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: InkWell(
-                           onTap: () =>  Navigator.push(
-                            context,
-                          MaterialPageRoute(
-                          builder: (context) => const education()),
-                           ),
-                            
+                              onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const education()),
+                              ),
                               child: Center(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -171,26 +158,24 @@ class MyDashboard extends StatelessWidget {
                                 ),
                               ),
                             ),
-
                           ),
-                         
                           Card(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: InkWell(
-                             onTap: () =>  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const skillsMehor()),
-                           ),
+                              onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const skillsMehor()),
+                              ),
                               splashColor: Colors.blue,
                               child: Center(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: const [
                                     Icon(
-                                        Icons.engineering,
+                                      Icons.engineering,
                                       size: 70,
                                       color: Colors.blue,
                                     ),
@@ -205,17 +190,17 @@ class MyDashboard extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: InkWell(
-                            onTap: () =>  Navigator.push(
-                            context,
-                          MaterialPageRoute(
-                          builder: (context) => const midiaSocial()),
-                           ),
+                              onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const midiaSocial()),
+                              ),
                               child: Center(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: const [
                                     Icon(
-                                      Icons.favorite  ,
+                                      Icons.favorite,
                                       size: 70,
                                       color: Colors.blue,
                                     ),
@@ -225,22 +210,22 @@ class MyDashboard extends StatelessWidget {
                               ),
                             ),
                           ),
-                           Card(
+                          Card(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: InkWell(
-                            onTap: () =>  Navigator.push(
-                            context,
-                          MaterialPageRoute(
-                          builder: (context) => projects()),
-                           ),
+                              onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => projects()),
+                              ),
                               child: Center(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: const [
                                     Icon(
-                                      Icons.folder_rounded  ,
+                                      Icons.folder_rounded,
                                       size: 70,
                                       color: Colors.blue,
                                     ),
@@ -260,6 +245,6 @@ class MyDashboard extends StatelessWidget {
           ),
         ],
       ),
-   );
+    );
   }
 }
