@@ -31,7 +31,7 @@ class _skillsMehorState extends State<skillsMehor> {
             margin: EdgeInsets.fromLTRB(5, 10, 25, 0),
                
               
-              height: 140,
+              height: 120,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                            
@@ -82,7 +82,9 @@ class _skillsMehorState extends State<skillsMehor> {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(70)
+                 
+                  topLeft: Radius.circular(40),
+                
                 )
               ),
               child: Column(

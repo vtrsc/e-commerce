@@ -1,19 +1,162 @@
 import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
-// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_print
-class education extends StatefulWidget {
+
+class HomePage extends StatefulWidget {
   @override
-  _educationState createState() => _educationState();
+  _HomePageState createState() => _HomePageState();
 }
+
+class _HomePageState extends State<HomePage> {
+  final double _borderRadius = 24;
+
+  var items = [
+    PlaceInfo('Dubai Mall Food Court', Color(0xff6DC8F3), Color(0xff73A1F9),
+        4.4, 'Dubai · In The Dubai Mall', 'Cosy · Casual · Good for kids'),
+    PlaceInfo('Hamriyah Food Court', Color(0xffFFB157), Color(0xffFFA057), 3.7,
+        'Sharjah', 'All you can eat · Casual · Groups'),
+    PlaceInfo('Gate of Food Court', Color(0xffFF5B95), Color(0xffF8556D), 4.5,
+        'Dubai · Near Dubai Aquarium', 'Casual · Groups'),
+    PlaceInfo('Express Food Court', Color(0xffD76EF5), Color(0xff8F7AFE), 4.1,
+        'Dubai', 'Casual · Good for kids · Delivery'),
+    PlaceInfo('BurJuman Food Court', Color(0xff42E695), Color(0xff3BB2B8), 4.2,
+        'Dubai · In BurJuman', '...'),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Foody'),
+      ),
+      body: ListView.builder(
+        itemCount: items.length,
+        itemBuilder: (context, index) {
+          return Center(
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Stack(
+                children: <Widget>[
+                  Container(
+                    height: 150,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(_borderRadius),
+                      gradient: LinearGradient(colors: [
+                        items[index].startColor,
+                        items[index].endColor
+                      ], begin: Alignment.topLeft, end: Alignment.bottomRight),
+                      boxShadow: [
+                        BoxShadow(
+                          color: items[index].endColor,
+                          blurRadius: 12,
+                          offset: Offset(0, 6),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Positioned(
+                    right: 0,
+                    bottom: 0,
+                    top: 0,
+                    child: CustomPaint(
+                      size: Size(100, 150),
+                      painter: CustomCardShapePainter(_borderRadius,
+                          items[index].startColor, items[index].endColor),
+                    ),
+                  ),
+                  Positioned.fill(
+                    child: Row(
+                      children: <Widget>[
+                        Expanded(
+                          child: Image.asset(
+                            'assets/icon.png',
+                            height: 64,
+                            width: 64,
+                          ),
+                          flex: 2,
+                        ),
+                        Expanded(
+                          flex: 4,
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                items[index].name,
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontFamily: 'Avenir',
+                                    fontWeight: FontWeight.w700),
+                              ),
+                              Text(
+                                items[index].category,
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'Avenir',
+                                ),
+                              ),
+                              SizedBox(height: 16),
+                              Row(
+                                children: <Widget>[
+                                  Icon(
+                                    Icons.location_on,
+                                    color: Colors.white,
+                                    size: 16,
+                                  ),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Flexible(
+                                    child: Text(
+                                      items[index].location,
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontFamily: 'Avenir',
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          flex: 2,
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: <Widget>[
+                              Text(
+                                items[index].rating.toString(),
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontFamily: 'Avenir',
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+}
+
 class PlaceInfo {
   final String name;
   final String category;
   final String location;
-  
+  final double rating;
   final Color startColor;
   final Color endColor;
 
-  PlaceInfo(this.name, this.startColor, this.endColor, 
+  PlaceInfo(this.name, this.startColor, this.endColor, this.rating,
       this.location, this.category);
 }
 
@@ -54,149 +197,3 @@ class CustomCardShapePainter extends CustomPainter {
     return true;
   }
 }
-class _educationState extends State<education> {
-  
-  final double _borderRadius = 24;
-
-  var items = [
-    PlaceInfo('   Kaplan languages',ui.Color.fromARGB(255, 40, 61, 223), ui.Color.fromARGB(255, 113, 164, 246), 
-        'Irland - Dublin', '  \n• conversation \n • grammar  \n • reading', ),
-        PlaceInfo('  Oracle University', ui.Color.fromARGB(255, 255, 179, 14), ui.Color.fromARGB(255, 240, 197, 88), 
-        'Online', '• Oracle Cloud Infrastructure 2021 Architect'),
-    PlaceInfo('   Senai  \n• Mechanical tecnology\n • Mechanical Lathe Operations\n • technical drawing', ui.Color.fromARGB(255, 216, 0, 0), ui.Color.fromARGB(255, 255, 87, 87), 'Sao Paulo - Santo André',
-        '' , ),
-         
-    PlaceInfo('   Tecnoponta', ui.Color.fromARGB(255, 8, 102, 28), ui.Color.fromARGB(255, 110, 156, 70), 
-        'Sao Paulo', '• Hardware (iPhone ,iPad)\n • iPhone Support\n • iPad Support '),
-    PlaceInfo('  Estacio ', Color(0xffD76EF5), Color(0xff8F7AFE), 
-        'Sao Paulo - Sao Caetano', '• Information Technology Management'),
-   
-  ];
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Education'),
-
-        backgroundColor: 
-              
-                
-                  Color.fromARGB(255, 15, 23, 173).withOpacity(0.8),
-                 
-                
-              ),
-      
-      body: ListView.builder(
-        itemCount: items.length,
-        itemBuilder: (context, index) {
-          return Center(
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Stack(
-                children: <Widget>[
-                  Container(
-                    height: 150,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(_borderRadius),
-                      gradient: LinearGradient(colors: [
-                        items[index].startColor,
-                        items[index].endColor
-                      ], begin: Alignment.topLeft, end: Alignment.bottomRight),
-                      boxShadow: [
-                        BoxShadow(
-                          color: items[index].endColor,
-                          blurRadius: 12,
-                          offset: Offset(0, 6),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Positioned(
-                    right: 0,
-                    bottom: 0,
-                    top: 0,
-                    child: CustomPaint(
-                      size: Size(100, 150),
-                      painter: CustomCardShapePainter(_borderRadius,
-                          items[index].startColor, items[index].endColor),
-                    ),
-                  ),
-                  Positioned.fill(
-                    child: Row(
-                      children: <Widget>[
-                     
-                        Expanded(
-                          flex: 4,
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                items[index].name,
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontFamily: 'bold',
-                                    fontWeight: FontWeight.w700),
-                              ),
-                              Text(
-                                items[index].category,
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontFamily: 'bold',
-                                ),
-                              ),
-                              SizedBox(height: 16),
-                              Row(
-                                children: <Widget>[
-                                  Icon(
-                                    Icons.location_on,
-                                    color: Colors.white,
-                                    size: 16,
-                                  ),
-                                  SizedBox(
-                                    width: 8,
-                                  ),
-                                  Flexible(
-                                    child: Text(
-                                      items[index].location,
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontFamily: 'Avenir',
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          flex: 2,
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: <Widget>[
-                              Text(
-                                '',
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontFamily: 'Avenir',
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.w700),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        },
-      ),
-    );
-  }
-}
-

@@ -142,7 +142,7 @@ class MyDashboard extends StatelessWidget {
                               onTap: () => Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const education()),
+                                    builder: (context) => education()),
                               ),
                               child: Center(
                                 child: Column(
