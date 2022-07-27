@@ -7,6 +7,7 @@ import 'package:teste/midiaSocial.dart';
 import 'package:teste/profile.dart';
 import 'package:teste/ShapeDashboard.dart';
 import 'package:teste/projects.dart';
+import 'package:teste/projects2.dart';
 import 'package:teste/skills.dart';
 import 'package:teste/skillsMelhor.dart';
 import 'package:teste/work.dart';
@@ -218,7 +219,7 @@ class MyDashboard extends StatelessWidget {
                               onTap: () => Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => projects()),
+                                    builder: (context) => projects2(title: '',)),
                               ),
                               child: Center(
                                 child: Column(

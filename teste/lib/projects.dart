@@ -8,7 +8,7 @@ import 'package:teste/MyClipper2.dart';
 import 'package:teste/dashboard.dart';
 import 'package:teste/profile.dart';
 import 'package:teste/skillsMelhor.dart';
-
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_print
 class projects extends StatefulWidget {
   const projects({Key? key}) : super(key: key);
 
@@ -68,29 +68,20 @@ class _projectsState extends State<projects>
               "Projects",
               style: TextStyle(
                   fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  foreground: Paint()
-                    ..shader = LinearGradient(
-                      colors: <Color>[
-                        Color.fromARGB(255, 255, 255, 255).withOpacity(0.8),
-                        Color.fromARGB(255, 255, 255, 255).withOpacity(0.9)
-                      ],
-
-                      //add more color here.
-                    ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 100.0))),
+                 
             )
-          ],
+        )],
         ),
       ),
 
 
           SafeArea(
-
+                
           
             child: Padding(
               
               padding: const EdgeInsets.only(top: 90.0),
-              child: Column(
+              child: Row(
             
                 children: [
                  
@@ -98,7 +89,7 @@ class _projectsState extends State<projects>
                   const SizedBox(height: 100),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(1.0),
+                       padding: EdgeInsets.fromLTRB(10,0,10,0),
                       child: GridView.count(
                         crossAxisCount: 1,
                         mainAxisSpacing: 10,
@@ -109,7 +100,7 @@ class _projectsState extends State<projects>
                           child: Row(
                           children: [
                             Image.asset('assets/appCentral.jpg',
-                            height: 500,
+                            height: 300,
                             ),
                              Text("APP Arquivo-Central  \n I built a mobile \n and   desktop \n application that \n for the City of \n Santo Andre  facilitates \n the archiving of \n processes with \n just reading the \n QR-CODE . Saving and \n changing the data in the  \n City Hall's database."),
                           ],
