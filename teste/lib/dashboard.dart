@@ -219,7 +219,7 @@ class MyDashboard extends StatelessWidget {
                               onTap: () => Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => projects2(title: '',)),
+                                    builder: (context) => projects2()),
                               ),
                               child: Center(
                                 child: Column(

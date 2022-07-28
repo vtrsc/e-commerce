@@ -81,6 +81,7 @@ flutter:
     -  assets/appCentral.jpg
     -  assets/chatBot.jpeg
     -  assets/conversorDeMoeda.jpg
+    -  assets/kubernetsar.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
