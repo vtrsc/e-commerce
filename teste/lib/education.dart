@@ -59,16 +59,16 @@ class _educationState extends State<education> {
   final double _borderRadius = 24;
 
   var items = [
-    PlaceInfo('   Kaplan languages',ui.Color.fromARGB(255, 40, 61, 223), ui.Color.fromARGB(255, 113, 164, 246), 
+    PlaceInfo('   Kaplan languages',ui.Color.fromARGB(255, 0, 20, 73).withOpacity(0.8), ui.Color.fromARGB(255, 57, 82, 150).withOpacity(0.9),
         'Irland - Dublin', '  \n• conversation \n • grammar  \n • reading', ),
-        PlaceInfo('  Oracle University', ui.Color.fromARGB(255, 255, 179, 14), ui.Color.fromARGB(255, 240, 197, 88), 
+        PlaceInfo('  Oracle University',ui.Color.fromARGB(255, 1, 38, 119).withOpacity(0.8), ui.Color.fromARGB(255, 57, 82, 150).withOpacity(0.9),
         'Online', '• Oracle Cloud Infrastructure 2021 Architect'),
-    PlaceInfo('   Senai  \n• Mechanical tecnology\n • Mechanical Lathe Operations\n • technical drawing', ui.Color.fromARGB(255, 216, 0, 0), ui.Color.fromARGB(255, 255, 87, 87), 'Sao Paulo - Santo André',
+    PlaceInfo('   Senai  \n• Mechanical tecnology\n • Mechanical Lathe Operations\n • technical drawing', ui.Color.fromARGB(255, 0, 91, 197), ui.Color.fromARGB(255, 57, 82, 150), 'Sao Paulo - Santo André',
         '' , ),
          
-    PlaceInfo('   Tecnoponta', ui.Color.fromARGB(255, 8, 102, 28), ui.Color.fromARGB(255, 110, 156, 70), 
+    PlaceInfo('   Tecnoponta', ui.Color.fromARGB(255, 0, 180, 252), ui.Color.fromARGB(255, 57, 82, 150), 
         'Sao Paulo', '• Hardware (iPhone ,iPad)\n • iPhone Support\n • iPad Support '),
-    PlaceInfo('  Estacio ', Color(0xffD76EF5), Color(0xff8F7AFE), 
+    PlaceInfo(' technologist ',   ui.Color.fromARGB(255, 23, 249, 255), ui.Color.fromARGB(255, 57, 82, 150), 
         'Sao Paulo - Sao Caetano', '• Information Technology Management'),
    
   ];

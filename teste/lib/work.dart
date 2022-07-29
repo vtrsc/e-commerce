@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:teste/MyClipper2.dart';
@@ -13,8 +12,7 @@ class work extends StatefulWidget {
   State<work> createState() => _workState();
 }
 
-class _workState extends State<work>
-    with SingleTickerProviderStateMixin {
+class _workState extends State<work> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
 
   @override
@@ -33,81 +31,56 @@ class _workState extends State<work>
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
-
-
-        
         children: [
-
-          
           ClipPath(
-            clipper: MyClipper2(),
-            child: Container(
-              decoration: BoxDecoration(
-            gradient: LinearGradient(
-          colors: <Color>[
-            Color.fromARGB(255, 15, 23, 173).withOpacity(0.8),
-            Color.fromARGB(255, 15, 133, 232).withOpacity(0.9)
-          ],
-        )),
-
-
-      child: Column(
-          children: [
-            Container(
-            margin: EdgeInsets.fromLTRB(5, 10, 25, 0),
-               
-              
-              height: 140,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                           
-                               
-
-                children: [
-                  
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      
-                      IconButton(
-                        
-                        icon: const Icon(Icons.arrow_back_ios),
-                        color: Colors.white,
-                        onPressed: (){
-                          Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => MyDashboard()));
-                        },
-                      ),
-                     
-                    SizedBox(width: 55,),
-                      Text("      Work",
-                      
-                      style: TextStyle(
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      ),
-                      ),
-                     
-                      
-                 
+              clipper: MyClipper2(),
+              child: Container(
+                  decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                    colors: <Color>[
+                      Color.fromARGB(255, 15, 23, 173).withOpacity(0.8),
+                      Color.fromARGB(255, 15, 133, 232).withOpacity(0.9)
                     ],
-                  ),
-                   
-                     
-                  
-                ],
-                 
-              ),
-        
-            ),
-      
-        ])))],
-       
-      
-      
+                  )),
+                  child: Column(children: [
+                    Container(
+                      margin: EdgeInsets.fromLTRB(5, 10, 25, 0),
+                      height: 140,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              IconButton(
+                                icon: const Icon(Icons.arrow_back_ios),
+                                color: Colors.white,
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => MyDashboard()));
+                                },
+                              ),
+                              SizedBox(
+                                width: 55,
+                              ),
+                              Text(
+                                "      Work",
+                                style: TextStyle(
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ])))
+        ],
       ),
-   );
+    );
   }
 }
-      
