@@ -106,7 +106,8 @@ class _skillsMehorState extends State<skillsMehor> {
                         primary: false,
                         children: [
                          const WidgetCards(pathimage: 'flutterLogo.png', 
-                         tituloTecnologia: 'Flutter'),
+                         tituloTecnologia: 'Flutter',
+                         ),
 
                         const WidgetCards(pathimage: 'dartLogo.png',
                          tituloTecnologia: 'Dart'),

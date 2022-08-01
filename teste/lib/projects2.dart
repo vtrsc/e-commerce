@@ -78,7 +78,9 @@ class _projects2State extends State<projects2> {
       Column(
         children: <Widget>[
           ExpansionTile(
-            title: const Text('Kubernets'),
+            title: const Text('Kubernets',
+            style: TextStyle( fontWeight: FontWeight.bold,
+                      )),
             trailing: const Icon(Icons.folder_rounded),
             controlAffinity: ListTileControlAffinity.leading,
             children: <Widget>[
@@ -90,11 +92,17 @@ class _projects2State extends State<projects2> {
                     ),
                   ),
                   title: Text(
-                      'Participation implementation of Kubernetes infrastructure and development of microservices.')),
+                      'Participation implementation of Kubernetes infrastructure and development of microservices.',
+                      style: TextStyle( fontWeight: FontWeight.bold,
+                      )
+                      ),
+                      ),
             ],
           ),
           ExpansionTile(
-            title: const Text('Arquivo-Central'),
+            title: const Text('Arquivo-Central',
+            style: TextStyle( fontWeight: FontWeight.bold,)
+            ),
             trailing: const Icon(Icons.folder_rounded),
             controlAffinity: ListTileControlAffinity.leading,
             children: <Widget>[
@@ -106,11 +114,13 @@ class _projects2State extends State<projects2> {
                     ),
                   ),
                   title: Text(
-                      "APP Arquivo-Central I built a mobile  and   desktop  application that  for the City of  Santo Andre  facilitates the archiving of processes with just reading the  QR-CODE . Saving and  changing the data in the  City Hall's database.")),
+                      "APP Arquivo-Central I built a mobile  and   desktop  application that  for the City of  Santo Andre  facilitates the archiving of processes with just reading the  QR-CODE . Saving and  changing the data in the  City Hall's database.",
+                       style: TextStyle( fontWeight: FontWeight.bold,))),
             ],
           ),
           ExpansionTile(
-            title: const Text('Chat-Bot'),
+            title: const Text('Chat-Bot',
+             style: TextStyle( fontWeight: FontWeight.bold,)),
             trailing: const Icon(Icons.folder_rounded),
             controlAffinity: ListTileControlAffinity.leading,
             children: <Widget>[
@@ -122,13 +132,15 @@ class _projects2State extends State<projects2> {
                   ),
                 ),
                 title: Text(
-                    "ChatBot   I created a simple Python chatbot for a clothing store. The chatbot has basic question-answering skills,"),
+                    "ChatBot   I created a simple Python chatbot for a clothing store. The chatbot has basic question-answering skills,",
+                     style: TextStyle( fontWeight: FontWeight.bold,)),
               ),
             ],
           ),
 
           ExpansionTile(
-            title: const Text('APP- Estaçao de Coleta'),
+            title: const Text('APP- Estaçao de Coleta',
+             style: TextStyle( fontWeight: FontWeight.bold,)),
             trailing: const Icon(Icons.folder_rounded),
             controlAffinity: ListTileControlAffinity.leading,
             children: <Widget>[
@@ -140,12 +152,14 @@ class _projects2State extends State<projects2> {
                   ),
                 ),
                 title: Text(
-                    "I created the collection station APP that helps in the control of residences from all over the city of santo andre"),
+                    "I created the collection station APP that helps in the control of residences from all over the city of santo andre",
+                     style: TextStyle( fontWeight: FontWeight.bold,)),
               ),
             ],
           ),
           ExpansionTile(
-            title: const Text('Web Site'),
+            title: const Text('Web Site',
+             style: TextStyle( fontWeight: FontWeight.bold,)),
             trailing: const Icon(Icons.folder_rounded),
             controlAffinity: ListTileControlAffinity.leading,
             children: <Widget>[
@@ -154,16 +168,19 @@ class _projects2State extends State<projects2> {
                   constraints: BoxConstraints(),
                   child: Image.asset(
                     'assets/pousada.png',
+                    height: 50,
                   ),
                 ),
                 title:
-                    Text("I created a WebSite with HTML , CSS and JavaScript "),
+                    Text("I created a WebSite with HTML , CSS and JavaScript ",
+                     style: TextStyle( fontWeight: FontWeight.bold,)),
               ),
             ],
           ),
 
           ExpansionTile(
-            title: const Text('Portifolio'),
+            title: const Text('Portifolio' ,
+             style: TextStyle( fontWeight: FontWeight.bold,)),
             trailing: const Icon(Icons.folder_rounded),
             controlAffinity: ListTileControlAffinity.leading,
             children: <Widget>[
@@ -175,12 +192,14 @@ class _projects2State extends State<projects2> {
                   ),
                 ),
                 title:
-                    Text("My Portifolio with Dart And Flutter"),
+                    Text("My Portifolio with Dart And Flutter",
+                     style: TextStyle( fontWeight: FontWeight.bold,)),
               ),
             ],
           ),
           ExpansionTile(
-            title: const Text('Clima Tempo'),
+            title: const Text('Clima Tempo',
+             style: TextStyle( fontWeight: FontWeight.bold,)),
             trailing: const Icon(Icons.folder_rounded),
             controlAffinity: ListTileControlAffinity.leading,
             children: <Widget>[
@@ -192,12 +211,14 @@ class _projects2State extends State<projects2> {
                   ),
                 ),
                 title:
-                    Text("weather weather consuming an external API"),
+                    Text("weather weather consuming an external API",
+                     style: TextStyle( fontWeight: FontWeight.bold,)),
               ),
             ],
           ),
           ExpansionTile(
-            title: const Text('Conversor de moeda'),
+            title: const Text('Conversor de moeda',
+             style: TextStyle( fontWeight: FontWeight.bold,)),
             trailing: const Icon(Icons.folder_rounded),
             controlAffinity: ListTileControlAffinity.leading,
             children: <Widget>[
@@ -209,12 +230,15 @@ class _projects2State extends State<projects2> {
                   ),
                 ),
                 title: Text(
-                    "I created a currency \n converter  app for \n student purposes"),
+                    "I created a currency \n converter  app for \n student purposes",
+                     style: TextStyle( fontWeight: FontWeight.bold,)
+                    ),
               ),
             ],
           ),
           ExpansionTile(
-            title: const Text('Chess Game'),
+            title: const Text('Chess Game',
+             style: TextStyle( fontWeight: FontWeight.bold,)),
             trailing: const Icon(Icons.folder_rounded),
             controlAffinity: ListTileControlAffinity.leading,
             children: <Widget>[
@@ -226,12 +250,14 @@ class _projects2State extends State<projects2> {
                   ),
                 ),
                 title: Text(
-                    "eu criei um um clone do jogo de xadrez"),
+                    "eu criei um um clone do jogo de xadrez",
+                     style: TextStyle( fontWeight: FontWeight.bold,)),
               ),
             ],
           ),
           ExpansionTile(
-            title: const Text('Calculadora '),
+            title: const Text('Calculadora',
+             style: TextStyle( fontWeight: FontWeight.bold,)),
             trailing: const Icon(Icons.folder_rounded),
             controlAffinity: ListTileControlAffinity.leading,
             children: <Widget>[
@@ -243,12 +269,14 @@ class _projects2State extends State<projects2> {
                   ),
                 ),
                 title: Text(
-                    "I created a Calculator with JavaScript for study purposes "),
+                    "I created a Calculator with JavaScript for study purposes ",
+                     style: TextStyle( fontWeight: FontWeight.bold,)),
               ),
             ],
           ),
           ExpansionTile(
-            title: const Text('Mario Game'),
+            title: const Text('Mario Game',
+             style: TextStyle( fontWeight: FontWeight.bold,)),
             trailing: const Icon(Icons.folder_rounded),
             controlAffinity: ListTileControlAffinity.leading,
             children: <Widget>[
@@ -260,7 +288,7 @@ class _projects2State extends State<projects2> {
                   ),
                 ),
                 title:
-                    Text("I created a mario game for study purposes "),
+                    Text("I created a mario game for study purposes",),
               ),
             ],
           ),
