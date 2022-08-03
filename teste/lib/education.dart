@@ -59,16 +59,16 @@ class _educationState extends State<education> {
   final double _borderRadius = 24;
 
   var items = [
-    PlaceInfo('   Kaplan languages',ui.Color.fromARGB(255, 0, 20, 73).withOpacity(0.8), ui.Color.fromARGB(255, 57, 82, 150).withOpacity(0.9),
+    PlaceInfo('   Kaplan languages',ui.Color.fromARGB(255,44, 62, 80).withOpacity(0.8), ui.Color.fromARGB(255,44, 62, 80).withOpacity(0.9),
         'Irland - Dublin', '  \n• conversation \n • grammar  \n • reading', ),
-        PlaceInfo('  Oracle University',ui.Color.fromARGB(255, 1, 38, 119).withOpacity(0.8), ui.Color.fromARGB(255, 57, 82, 150).withOpacity(0.9),
+        PlaceInfo('  Oracle University',ui.Color.fromARGB(255,231, 76, 60).withOpacity(0.8), ui.Color.fromARGB(255,231, 76, 60).withOpacity(0.9),
         'Online', '• Oracle Cloud Infrastructure 2021 Architect'),
-    PlaceInfo('   Senai  \n• Mechanical tecnology\n • Mechanical Lathe Operations\n • technical drawing', ui.Color.fromARGB(255, 0, 91, 197), ui.Color.fromARGB(255, 57, 82, 150), 'Sao Paulo - Santo André',
+    PlaceInfo('   Senai  \n• Mechanical tecnology\n • Mechanical Lathe Operations\n • technical drawing', ui.Color.fromARGB(39, 93, 95, 95), ui.Color.fromARGB(255,236, 240, 241), 'Sao Paulo - Santo André',
         '' , ),
          
-    PlaceInfo('   Tecnoponta', ui.Color.fromARGB(255, 0, 180, 252), ui.Color.fromARGB(255, 57, 82, 150), 
+    PlaceInfo('   Tecnoponta', ui.Color.fromARGB( 255,52, 152, 219), ui.Color.fromARGB( 255,52, 152, 219), 
         'Sao Paulo', '• Hardware (iPhone ,iPad)\n • iPhone Support\n • iPad Support '),
-    PlaceInfo(' technologist ',   ui.Color.fromARGB(255, 23, 249, 255), ui.Color.fromARGB(255, 57, 82, 150), 
+    PlaceInfo(' technologist ',   ui.Color.fromARGB(255, 41, 128, 185), ui.Color.fromARGB(255, 41, 128, 185), 
         'Sao Paulo - Sao Caetano', '• Information Technology Management'),
    
   ];
@@ -77,7 +77,12 @@ class _educationState extends State<education> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Education'),
+        title: Text('Education',
+         style: TextStyle(
+              fontFamily: "bold",
+              fontSize: 30.0,
+            ),
+        ),
 
         backgroundColor: 
               
@@ -142,9 +147,9 @@ class _educationState extends State<education> {
                               Text(
                                 items[index].category,
                                 style: TextStyle(
-                                  color: Colors.white,
-                                  fontFamily: 'bold',
-                                ),
+                                    color: Colors.white,
+                                    fontFamily: 'bold',
+                                    fontWeight: FontWeight.w700),
                               ),
                               SizedBox(height: 16),
                               Row(
