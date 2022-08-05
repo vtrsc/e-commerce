@@ -1,76 +1,58 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:teste/MyClipper2.dart';
-import 'package:teste/dashboard.dart';
-import 'package:teste/profile.dart';
-import 'package:teste/skillsMelhor.dart';
 
-class work extends StatefulWidget {
+class work extends StatelessWidget {
   const work({Key? key}) : super(key: key);
-
-  @override
-  State<work> createState() => _workState();
-}
-
-class _workState extends State<work> with SingleTickerProviderStateMixin {
-  late AnimationController _controller;
-
-  @override
-  void initState() {
-    super.initState();
-    _controller = AnimationController(vsync: this);
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
-    _controller.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          ClipPath(
-              clipper: MyClipper2(),
-              child: Container(
-                  decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                    colors: <Color>[
-                      Color.fromARGB(255, 15, 23, 173).withOpacity(0.8),
-                      Color.fromARGB(255, 15, 133, 232).withOpacity(0.9)
-                    ],
-                  )),
-                  child: Column(children: [
-                    Container(
-                      margin: EdgeInsets.fromLTRB(5, 10, 25, 0),
-                      height: 140,
+      appBar: AppBar(title: const Text("Work"), centerTitle: true),
+      body: ListView(
+        scrollDirection: Axis.vertical,
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FittedBox(
+              child: Material(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(24.0),
+                shadowColor: Colors.blue,
+                elevation: 14.0,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    SizedBox(
+                      width: 50.0,
+                      height: 100.0,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(24.0),
+                        child: const Icon(
+                          Icons.bug_report,
+                          size: 50,
+                          color: Colors.blue,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          const Text(
+                            'Penetration Testing',
+                            style: TextStyle(
+                              color: Colors.blue,
+                              fontSize: 24.0,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              IconButton(
-                                icon: const Icon(Icons.arrow_back_ios),
-                                color: Colors.white,
-                                onPressed: () {
-                                  Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) => MyDashboard()));
-                                },
-                              ),
-                              SizedBox(
-                                width: 55,
-                              ),
+                            children: const [
                               Text(
-                                "      Work",
+                                'Melalukan Penetration Testing pada situs \nweb & mobile apps',
                                 style: TextStyle(
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
+                                  color: Colors.black54,
+                                  fontSize: 18.0,
                                 ),
                               ),
                             ],
@@ -78,7 +60,121 @@ class _workState extends State<work> with SingleTickerProviderStateMixin {
                         ],
                       ),
                     ),
-                  ])))
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FittedBox(
+              child: Material(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(24.0),
+                shadowColor: Colors.blue,
+                elevation: 14.0,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    SizedBox(
+                      width: 50.0,
+                      height: 100.0,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(24.0),
+                        child: const Icon(
+                          Icons.phone_android,
+                          color: Colors.blue,
+                          size: 50,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          const Text(
+                            'Mobile Apps Dev',
+                            style: TextStyle(
+                              color: Colors.blue,
+                              fontSize: 24.0,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Row(
+                            children: const [
+                              Text(
+                                'Membuat aplikasi mobile dengan menggunakan \nflutter',
+                                style: TextStyle(
+                                  color: Colors.black54,
+                                  fontSize: 18.0,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FittedBox(
+              child: Material(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(24.0),
+                shadowColor: Colors.blue,
+                elevation: 14.0,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    SizedBox(
+                      width: 50.0,
+                      height: 100.0,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(24.0),
+                        child: const Icon(
+                          Icons.code,
+                          color: Colors.blue,
+                          size: 50,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          const Text(
+                            'Backend Developer',
+                            style: TextStyle(
+                              color: Colors.blue,
+                              fontSize: 24.0,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Row(
+                            children: const [
+                              Text(
+                                'Membuat backend untuk sebuah aplikasi dengan \nmenggunakan NodeJS, Golang, Python Flask',
+                                style: TextStyle(
+                                  color: Colors.black54,
+                                  fontSize: 18.0,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
