@@ -148,7 +148,7 @@ class _projects2State extends State<projects2> {
                 leading: ConstrainedBox(
                   constraints: BoxConstraints(),
                   child: Image.asset(
-                    'assets/appEC.jpg',
+                    'assets/appEC.png',
                   ),
                 ),
                 title: Text(
