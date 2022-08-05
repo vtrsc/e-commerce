@@ -103,7 +103,7 @@ class MyDashboard extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: const [
                                     Icon(Icons.person,
-                                        size: 70, color: Colors.blue),
+                                        size: 70, color:Color.fromARGB(255, 44, 61, 251)),
                                     Text("Profile",
                                      style: TextStyle( fontWeight: FontWeight.bold,)),
                                   ],
@@ -128,7 +128,7 @@ class MyDashboard extends StatelessWidget {
                                     Icon(
                                       Icons.work,
                                       size: 70,
-                                      color: Colors.blue,
+                                      color:Color.fromARGB(255, 44, 61, 251)
                                     ),
                                     Text("Work",
                                      style: TextStyle( fontWeight: FontWeight.bold,)),
@@ -154,7 +154,7 @@ class MyDashboard extends StatelessWidget {
                                     Icon(
                                       Icons.school_rounded,
                                       size: 70,
-                                      color: Colors.blue,
+                                      color: Color.fromARGB(255, 44, 61, 251)
                                     ),
                                     Text("Education",
                                      style: TextStyle( fontWeight: FontWeight.bold,)),
@@ -173,7 +173,7 @@ class MyDashboard extends StatelessWidget {
                                 MaterialPageRoute(
                                     builder: (context) => const skillsMehor()),
                               ),
-                              splashColor: Colors.blue,
+                              splashColor:  Color.fromARGB(255, 76, 93, 219),
                               child: Center(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -181,7 +181,7 @@ class MyDashboard extends StatelessWidget {
                                     Icon(
                                       Icons.engineering,
                                       size: 70,
-                                      color: Colors.blue,
+                                      color:Color.fromARGB(255, 44, 61, 251)
                                     ),
                                     Text("Skills",
                                      style: TextStyle( fontWeight: FontWeight.bold,)),
@@ -207,7 +207,7 @@ class MyDashboard extends StatelessWidget {
                                     Icon(
                                       Icons.favorite,
                                       size: 70,
-                                      color: Colors.blue,
+                                      color: Color.fromARGB(255, 44, 61, 251)
                                     ),
                                     Text("Midia Social",
                                      style: TextStyle( fontWeight: FontWeight.bold,)),
@@ -233,7 +233,7 @@ class MyDashboard extends StatelessWidget {
                                     Icon(
                                       Icons.folder_rounded,
                                       size: 70,
-                                      color: Colors.blue,
+                                      color: Color.fromARGB(255, 44, 61, 251)
                                     ),
                                     Text("Project",
                                      style: TextStyle( fontWeight: FontWeight.bold,)),

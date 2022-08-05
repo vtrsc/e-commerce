@@ -77,8 +77,10 @@ class _educationState extends State<education> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        
         title: Text('Education',
          style: TextStyle(
+          color: Colors.white,
               fontFamily: "bold",
               fontSize: 30.0,
             ),
@@ -87,7 +89,7 @@ class _educationState extends State<education> {
         backgroundColor: 
               
                 
-                  Color.fromARGB(255, 15, 23, 173).withOpacity(0.8),
+                  ui.Color.fromARGB(255, 167, 167, 167).withOpacity(0.8),
                  
                 
               ),
