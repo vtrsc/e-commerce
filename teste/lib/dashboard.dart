@@ -97,7 +97,7 @@ class MyDashboard extends StatelessWidget {
                                 MaterialPageRoute(
                                     builder: (context) => profile()),
                               ),
-                              splashColor: Colors.blue,
+                              splashColor: Color.fromARGB(255, 20, 105, 244),
                               child: Center(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -121,6 +121,7 @@ class MyDashboard extends StatelessWidget {
                                 MaterialPageRoute(
                                     builder: (context) => const work()),
                               ),
+                              splashColor:  Color.fromARGB(255, 20, 105, 244),
                               child: Center(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -147,6 +148,7 @@ class MyDashboard extends StatelessWidget {
                                 MaterialPageRoute(
                                     builder: (context) => education()),
                               ),
+                              splashColor:  Color.fromARGB(255, 20, 105, 244),
                               child: Center(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
