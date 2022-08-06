@@ -200,6 +200,7 @@ class MyDashboard extends StatelessWidget {
                                 MaterialPageRoute(
                                     builder: (context) => const midiaSocial()),
                               ),
+                               splashColor:  Color.fromARGB(255, 20, 105, 244),
                               child: Center(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -225,6 +226,7 @@ class MyDashboard extends StatelessWidget {
                                 MaterialPageRoute(
                                     builder: (context) => projects2()),
                               ),
+                               splashColor:  Color.fromARGB(255, 20, 105, 244),
                               child: Center(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
