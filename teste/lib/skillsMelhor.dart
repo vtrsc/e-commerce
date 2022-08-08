@@ -84,6 +84,7 @@ class _skillsMehorState extends State<skillsMehor> {
                 borderRadius: BorderRadius.only(
                  
                   topLeft: Radius.circular(40),
+                  
                 
                 )
               ),
@@ -105,6 +106,7 @@ class _skillsMehorState extends State<skillsMehor> {
                         crossAxisSpacing: 10,
                         primary: false,
                         children: [
+                          //example clean code
                          const WidgetCards(pathimage: 'flutterLogo.png', 
                          tituloTecnologia: 'Flutter',
                          ),
@@ -121,6 +123,7 @@ class _skillsMehorState extends State<skillsMehor> {
                         const WidgetCards(
                           pathimage: 'pythonLogo.jpg',
                            tituloTecnologia: 'Python'),
+                           //example clean code
                           
                           Card(
                             shape: RoundedRectangleBorder(
