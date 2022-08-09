@@ -84,7 +84,7 @@ class _skillsMehorState extends State<skillsMehor> {
                 borderRadius: BorderRadius.only(
                  
                   topLeft: Radius.circular(40),
-                  
+                  topRight: Radius.circular(40),
                 
                 )
               ),

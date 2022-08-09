@@ -14,9 +14,9 @@ class work extends StatefulWidget {
 }
 
 class _workState extends State<work> {
-  bool _customTileExpanded = false;
 
-  static const String _title = 'Projects';
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -96,7 +96,7 @@ class _workState extends State<work> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
                                   const Text(
-                                    'Penetration Testing',
+                                    'Code Tester',
                                     style: TextStyle(
                                       color: Colors.blue,
                                       fontSize: 24.0,
@@ -106,7 +106,7 @@ class _workState extends State<work> {
                                   Row(
                                     children: const [
                                       Text(
-                                        'Melalukan Penetration Testing pada situs \nweb & mobile apps',
+                                        'Testing and validating code from other developers',
                                         style: TextStyle(
                                           color: Colors.black54,
                                           fontSize: 18.0,
@@ -146,7 +146,7 @@ class _workState extends State<work> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
                                   const Text(
-                                    'Penetration Testing',
+                                    'Mobile Developer',
                                     style: TextStyle(
                                       color: Colors.blue,
                                       fontSize: 24.0,
@@ -156,7 +156,7 @@ class _workState extends State<work> {
                                   Row(
                                     children: const [
                                       Text(
-                                        'Melalukan Penetration Testing pada situs \nweb & mobile apps',
+                                        'Mobile Application Development with Flutter and Dart',
                                         style: TextStyle(
                                           color: Colors.black54,
                                           fontSize: 18.0,
@@ -196,7 +196,7 @@ class _workState extends State<work> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
                                   const Text(
-                                    'Penetration Testing',
+                                    'Backend Developer',
                                     style: TextStyle(
                                       color: Colors.blue,
                                       fontSize: 24.0,
@@ -206,7 +206,7 @@ class _workState extends State<work> {
                                   Row(
                                     children: const [
                                       Text(
-                                        'Melalukan Penetration Testing pada situs \nweb & mobile apps',
+                                        'Development with Python and SQL , Software and Solutions.',
                                         style: TextStyle(
                                           color: Colors.black54,
                                           fontSize: 18.0,
@@ -246,7 +246,7 @@ class _workState extends State<work> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
                                   const Text(
-                                    'Penetration Testing',
+                                    'Collaborator and Volunteer Amigo Animal -ABC',
                                     style: TextStyle(
                                       color: Colors.blue,
                                       fontSize: 24.0,
@@ -256,7 +256,7 @@ class _workState extends State<work> {
                                   Row(
                                     children: const [
                                       Text(
-                                        'Melalukan Penetration Testing pada situs \nweb & mobile apps',
+                                        'Helping homeless animals with food and finding a home',
                                         style: TextStyle(
                                           color: Colors.black54,
                                           fontSize: 18.0,
@@ -296,7 +296,7 @@ class _workState extends State<work> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
                                   const Text(
-                                    'Penetration Testing',
+                                    'Dev Conference - Volunteer',
                                     style: TextStyle(
                                       color: Colors.blue,
                                       fontSize: 24.0,
@@ -306,7 +306,7 @@ class _workState extends State<work> {
                                   Row(
                                     children: const [
                                       Text(
-                                        'Melalukan Penetration Testing pada situs \nweb & mobile apps',
+                                        'stage assistant, lectures: flutter, mentoring and front-end',
                                         style: TextStyle(
                                           color: Colors.black54,
                                           fontSize: 18.0,
@@ -346,7 +346,7 @@ class _workState extends State<work> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
                                   const Text(
-                                    'Penetration Testing',
+                                    'Apple Hardware',
                                     style: TextStyle(
                                       color: Colors.blue,
                                       fontSize: 24.0,
@@ -356,7 +356,7 @@ class _workState extends State<work> {
                                   Row(
                                     children: const [
                                       Text(
-                                        'Melalukan Penetration Testing pada situs \nweb & mobile apps',
+                                        'maintenance on Iphone, Ipad and operating system support',
                                         style: TextStyle(
                                           color: Colors.black54,
                                           fontSize: 18.0,
