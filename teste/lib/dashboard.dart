@@ -97,13 +97,13 @@ class MyDashboard extends StatelessWidget {
                                 MaterialPageRoute(
                                     builder: (context) => profile()),
                               ),
-                              splashColor: Color.fromARGB(255, 20, 105, 244),
+                              splashColor: Color.fromARGB(211, 80, 151, 209),
                               child: Center(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: const [
                                     Icon(Icons.person,
-                                        size: 70, color:Color.fromARGB(255, 20, 105, 244)),
+                                        size: 70, color:Color.fromARGB(255, 150, 169, 199)),
                                     Text("Profile",
                                      style: TextStyle( fontWeight: FontWeight.bold,)),
                                   ],
