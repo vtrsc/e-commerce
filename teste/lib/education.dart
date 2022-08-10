@@ -85,7 +85,7 @@ class _educationState extends State<education> {
                               borderRadius: BorderRadius.circular(24.0),
                               child: const Icon(
                                 Icons.auto_stories_rounded,
-                                size: 50,
+                                size: 40,
                                 color:Color.fromARGB(255, 78, 135, 226),
                               ),
                             ),
@@ -235,7 +235,7 @@ class _educationState extends State<education> {
                               borderRadius: BorderRadius.circular(24.0),
                               child: const Icon(
                                 Icons.memory_rounded,
-                                size: 60,
+                                size: 50,
                                 color:Color.fromARGB(255, 78, 135, 226),
                               ),
                             ),
@@ -256,7 +256,7 @@ class _educationState extends State<education> {
                                   Row(
                                     children: const [
                                       Text(
-                                        '• Hardware (iPhone ,iPad) • iPhone Support • iPad Suppor',
+                                        '• Hardware (iPhone ,iPad) • iPhone Support \n • iPad Suppor',
                                         style: TextStyle(
                                           color: Colors.black54,
                                           fontSize: 18.0,
