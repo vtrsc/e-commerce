@@ -86,7 +86,7 @@ class _workState extends State<work> {
                               child: const Icon(
                                 Icons.bug_report,
                                 size: 50,
-                                color: Colors.blue,
+                                color:Color.fromARGB(255, 78, 135, 226),
                               ),
                             ),
                           ),
@@ -98,7 +98,7 @@ class _workState extends State<work> {
                                   const Text(
                                     'Code Tester',
                                     style: TextStyle(
-                                      color: Colors.blue,
+                                      color:Color.fromARGB(255, 78, 135, 226),
                                       fontSize: 24.0,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -136,7 +136,7 @@ class _workState extends State<work> {
                               child: const Icon(
                                 Icons.phone_android,
                                 size: 50,
-                                color: Colors.blue,
+                               color:Color.fromARGB(255, 78, 135, 226)
                               ),
                             ),
                           ),
@@ -148,7 +148,7 @@ class _workState extends State<work> {
                                   const Text(
                                     'Mobile Developer',
                                     style: TextStyle(
-                                      color: Colors.blue,
+                                      color:Color.fromARGB(255, 78, 135, 226),
                                       fontSize: 24.0,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -186,7 +186,7 @@ class _workState extends State<work> {
                               child: const Icon(
                                 Icons.code,
                                 size: 50,
-                                color: Colors.blue,
+                                 color:Color.fromARGB(255, 78, 135, 226),
                               ),
                             ),
                           ),
@@ -198,7 +198,7 @@ class _workState extends State<work> {
                                   const Text(
                                     'Backend Developer',
                                     style: TextStyle(
-                                      color: Colors.blue,
+                                       color:Color.fromARGB(255, 78, 135, 226),
                                       fontSize: 24.0,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -217,7 +217,109 @@ class _workState extends State<work> {
                                 ],
                               ))
                         ])))),
+                        Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FittedBox(
+                child: Material(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(24.0),
+                    shadowColor: Colors.blue,
+                    elevation: 14.0,
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          SizedBox(
+                            width: 50.0,
+                            height: 100.0,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(24.0),
+                              child: const Icon(
+                                Icons.desktop_windows_outlined,
+                                size: 50,
+                                color:Color.fromARGB(255, 78, 135, 226),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  const Text(
+                                    'Web Developer',
+                                    style: TextStyle(
+                                      color:Color.fromARGB(255, 78, 135, 226),
+                                      fontSize: 18.0,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Row(
+                                    children: const [
+                                      Text(
+                                        'build web sites  JavaScript with HTML , CSS , Flutter-Web',
+                                        style: TextStyle(
+                                          color: Colors.black54,
+                                          fontSize: 18.0,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ))
+                        ])))),
+       
+                        
         Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FittedBox(
+                child: Material(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(24.0),
+                    shadowColor: Colors.blue,
+                    elevation: 14.0,
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          SizedBox(
+                            width: 50.0,
+                            height: 100.0,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(24.0),
+                              child: const Icon(
+                                Icons.apple_outlined,
+                                size: 50,
+                                 color:Color.fromARGB(255, 78, 135, 226),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  const Text(
+                                    'Apple Hardware',
+                                    style: TextStyle(
+                                       color:Color.fromARGB(255, 78, 135, 226),
+                                      fontSize: 24.0,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Row(
+                                    children: const [
+                                      Text(
+                                        'maintenance on Iphone, Ipad and operating system support',
+                                        style: TextStyle(
+                                          color: Colors.black54,
+                                          fontSize: 18.0,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ))
+                        ])))),
+                         Padding(
             padding: const EdgeInsets.all(8.0),
             child: FittedBox(
                 child: Material(
@@ -236,7 +338,7 @@ class _workState extends State<work> {
                               child: const Icon(
                                 Icons.pets_rounded,
                                 size: 50,
-                                color: Colors.blue,
+                                 color:Color.fromARGB(255, 78, 135, 226),
                               ),
                             ),
                           ),
@@ -248,7 +350,7 @@ class _workState extends State<work> {
                                   const Text(
                                     'Collaborator and Volunteer Amigo Animal -ABC',
                                     style: TextStyle(
-                                      color: Colors.blue,
+                                      color:Color.fromARGB(255, 78, 135, 226),
                                       fontSize: 24.0,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -286,7 +388,7 @@ class _workState extends State<work> {
                               child: const Icon(
                                 Icons.accessibility_rounded,
                                 size: 50,
-                                color: Colors.blue,
+                                 color:Color.fromARGB(255, 78, 135, 226),
                               ),
                             ),
                           ),
@@ -298,7 +400,7 @@ class _workState extends State<work> {
                                   const Text(
                                     'Dev Conference - Volunteer',
                                     style: TextStyle(
-                                      color: Colors.blue,
+                                     color:Color.fromARGB(255, 78, 135, 226),
                                       fontSize: 24.0,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -317,56 +419,6 @@ class _workState extends State<work> {
                                 ],
                               ))
                         ])))),
-        Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: FittedBox(
-                child: Material(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(24.0),
-                    shadowColor: Colors.blue,
-                    elevation: 14.0,
-                    child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: <Widget>[
-                          SizedBox(
-                            width: 50.0,
-                            height: 100.0,
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(24.0),
-                              child: const Icon(
-                                Icons.apple_outlined,
-                                size: 50,
-                                color: Colors.blue,
-                              ),
-                            ),
-                          ),
-                          Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: <Widget>[
-                                  const Text(
-                                    'Apple Hardware',
-                                    style: TextStyle(
-                                      color: Colors.blue,
-                                      fontSize: 24.0,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  Row(
-                                    children: const [
-                                      Text(
-                                        'maintenance on Iphone, Ipad and operating system support',
-                                        style: TextStyle(
-                                          color: Colors.black54,
-                                          fontSize: 18.0,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ))
-                        ]))))
       ])
     ]))));
   }
