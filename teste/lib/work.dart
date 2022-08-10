@@ -67,56 +67,7 @@ class _workState extends State<work> {
             )),
       ),
       Column(children: <Widget>[
-        Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: FittedBox(
-                child: Material(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(24.0),
-                    shadowColor: Colors.blue,
-                    elevation: 14.0,
-                    child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: <Widget>[
-                          SizedBox(
-                            width: 50.0,
-                            height: 100.0,
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(24.0),
-                              child: const Icon(
-                                Icons.bug_report,
-                                size: 50,
-                                color:Color.fromARGB(255, 78, 135, 226),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: <Widget>[
-                                  const Text(
-                                    'Code Tester',
-                                    style: TextStyle(
-                                      color:Color.fromARGB(255, 78, 135, 226),
-                                      fontSize: 24.0,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  Row(
-                                    children: const [
-                                      Text(
-                                        'Testing and validating code from other developers',
-                                        style: TextStyle(
-                                          color: Colors.black54,
-                                          fontSize: 18.0,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ))
-                        ])))),
+        
         Padding(
             padding: const EdgeInsets.all(8.0),
             child: FittedBox(
@@ -217,6 +168,7 @@ class _workState extends State<work> {
                                 ],
                               ))
                         ])))),
+                        
                         Padding(
             padding: const EdgeInsets.all(8.0),
             child: FittedBox(
@@ -257,6 +209,56 @@ class _workState extends State<work> {
                                     children: const [
                                       Text(
                                         'build web sites  JavaScript with HTML , CSS , Flutter-Web',
+                                        style: TextStyle(
+                                          color: Colors.black54,
+                                          fontSize: 20.0,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ))
+                        ])))),
+                        Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FittedBox(
+                child: Material(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(24.0),
+                    shadowColor: Colors.blue,
+                    elevation: 14.0,
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          SizedBox(
+                            width: 50.0,
+                            height: 100.0,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(24.0),
+                              child: const Icon(
+                                Icons.gpp_good_rounded,
+                                size: 50,
+                                color:Color.fromARGB(255, 78, 135, 226),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  const Text(
+                                    'Code Tester',
+                                    style: TextStyle(
+                                      color:Color.fromARGB(255, 78, 135, 226),
+                                      fontSize: 24.0,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Row(
+                                    children: const [
+                                      Text(
+                                        'Testing and validating code from other developers',
                                         style: TextStyle(
                                           color: Colors.black54,
                                           fontSize: 18.0,
