@@ -386,7 +386,7 @@ class _workState extends State<work> {
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(24.0),
                               child: const Icon(
-                                Icons.accessibility_rounded,
+                                Icons.emoji_people_rounded,
                                 size: 50,
                                  color:Color.fromARGB(255, 78, 135, 226),
                               ),

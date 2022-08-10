@@ -1,209 +1,425 @@
-import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
+import 'package:teste/MyClipper.dart';
+import 'package:teste/MyClipper2.dart';
+import 'package:teste/ShapeDashboard.dart';
+import 'package:teste/dashboard.dart';
+
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_print
+
 class education extends StatefulWidget {
-  @override
-  _educationState createState() => _educationState();
-}
-class PlaceInfo {
-  final String name;
-  final String category;
-  final String location;
-  
-  final Color startColor;
-  final Color endColor;
-
-  PlaceInfo(this.name, this.startColor, this.endColor, 
-      this.location, this.category);
-}
-
-class CustomCardShapePainter extends CustomPainter {
-  final double radius;
-  final Color startColor;
-  final Color endColor;
-
-  CustomCardShapePainter(this.radius, this.startColor, this.endColor);
+  const education({Key? key}) : super(key: key);
 
   @override
-  void paint(Canvas canvas, Size size) {
-    var radius = 24.0;
-
-    var paint = Paint();
-    paint.shader = ui.Gradient.linear(
-        Offset(0, 0), Offset(size.width, size.height), [
-      HSLColor.fromColor(startColor).withLightness(0.8).toColor(),
-      endColor
-    ]);
-
-    var path = Path()
-      ..moveTo(0, size.height)
-      ..lineTo(size.width - radius, size.height)
-      ..quadraticBezierTo(
-          size.width, size.height, size.width, size.height - radius)
-      ..lineTo(size.width, radius)
-      ..quadraticBezierTo(size.width, 0, size.width - radius, 0)
-      ..lineTo(size.width - 1.5 * radius, 0)
-      ..quadraticBezierTo(-radius, 2 * radius, 0, size.height)
-      ..close();
-
-    canvas.drawPath(path, paint);
-  }
-
-  @override
-  bool shouldRepaint(CustomPainter oldDelegate) {
-    return true;
-  }
+  State<education> createState() => _educationState();
 }
+
 class _educationState extends State<education> {
-  
-  final double _borderRadius = 24;
 
-  var items = [
-    PlaceInfo('   Kaplan languages',ui.Color.fromARGB(255,33 , 74, 156).withOpacity(0.8), ui.Color.fromARGB(255,33 , 74, 156).withOpacity(0.9),
-        'Irland - Dublin', '  \n• conversation \n • grammar  \n • reading', ),
-        PlaceInfo('  Oracle University',ui.Color.fromARGB(255,19, 43, 92).withOpacity(0.8), ui.Color.fromARGB(255,19, 43, 92).withOpacity(0.9),
-        'Online', '• Oracle Cloud Infrastructure 2021 Architect'),
-    PlaceInfo('   Senai  \n• Mechanical tecnology\n • Mechanical Lathe Operations\n • technical drawing', ui.Color.fromARGB(255,45, 103, 219), ui.Color.fromARGB(255,45, 103, 219), 'Sao Paulo - Santo André',
-        '' , ),
-         
-    PlaceInfo('   Tecnoponta', ui.Color.fromARGB( 255,49, 110, 232), ui.Color.fromARGB( 255,49, 110, 232), 
-        'Sao Paulo', '• Hardware (iPhone ,iPad)\n • iPhone Support\n • iPad Support '),
-    PlaceInfo(' technologist ',   ui.Color.fromARGB(255, 41, 92, 194), ui.Color.fromARGB(255, 41, 92, 194), 
-        'Sao Paulo - Sao Caetano', '• Information Technology Management'),
-   
-  ];
+
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        
-        title: Text('Education',
-         style: TextStyle(
-          color: Colors.white,
-              fontFamily: "bold",
-              fontSize: 30.0,
-            ),
-        ),
-
-        backgroundColor: 
-              
-                
-                  ui.Color.fromARGB(255, 167, 167, 167).withOpacity(0.8),
-                 
-                
-              ),
-      
-      body: ListView.builder(
-        itemCount: items.length,
-        itemBuilder: (context, index) {
-          return Center(
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Stack(
-                children: <Widget>[
-                  Container(
-                    height: 150,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(_borderRadius),
-                      gradient: LinearGradient(colors: [
-                        items[index].startColor,
-                        items[index].endColor
-                      ], begin: Alignment.topLeft, end: Alignment.bottomRight),
-                      boxShadow: [
-                        BoxShadow(
-                          color: items[index].endColor,
-                          blurRadius: 12,
-                          offset: Offset(0, 6),
-                        ),
-                      ],
+        body: SingleChildScrollView(
+            child: (Column(children: [
+      ClipPath(
+        clipper: ShapeDashboard(),
+        child: Container(
+            height: 300,
+            width: MediaQuery.of(context).size.width,
+            decoration: BoxDecoration(
+                gradient: LinearGradient(
+              colors: <Color>[
+                Color.fromARGB(255, 15, 23, 173).withOpacity(0.8),
+                Color.fromARGB(255, 15, 133, 232).withOpacity(0.9)
+              ],
+            )),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Row(
+                  children: [
+                    IconButton(
+                      icon: const Icon(Icons.arrow_back_ios),
+                      color: Color.fromARGB(255, 255, 255, 255),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => MyDashboard()));
+                      },
                     ),
-                  ),
-                  Positioned(
-                    right: 0,
-                    bottom: 0,
-                    top: 0,
-                    child: CustomPaint(
-                      size: Size(100, 150),
-                      painter: CustomCardShapePainter(_borderRadius,
-                          items[index].startColor, items[index].endColor),
+                    SizedBox(
+                      width: 55,
                     ),
-                  ),
-                  Positioned.fill(
+                    Text(
+                      "   Education",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                        color: Color.fromARGB(255, 255, 255, 255),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            )),
+      ),
+      Column(children: <Widget>[
+        Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FittedBox(
+                child: Material(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(24.0),
+                    shadowColor: Colors.blue,
+                    elevation: 14.0,
                     child: Row(
-                      children: <Widget>[
-                     
-                        Expanded(
-                          flex: 4,
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                items[index].name,
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontFamily: 'bold',
-                                    fontWeight: FontWeight.w700),
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          SizedBox(
+                            width: 50.0,
+                            height: 100.0,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(24.0),
+                              child: const Icon(
+                                Icons.auto_stories_rounded,
+                                size: 50,
+                                color:Color.fromARGB(255, 78, 135, 226),
                               ),
-                              Text(
-                                items[index].category,
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontFamily: 'bold',
-                                    fontWeight: FontWeight.w700),
-                              ),
-                              SizedBox(height: 16),
-                              Row(
+                            ),
+                          ),
+                          Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
-                                  Icon(
-                                    Icons.location_on,
-                                    color: Colors.white,
-                                    size: 16,
-                                  ),
-                                  SizedBox(
-                                    width: 8,
-                                  ),
-                                  Flexible(
-                                    child: Text(
-                                      items[index].location,
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontFamily: 'Avenir',
-                                      ),
+                                  const Text(
+                                    'Kaplan languages - Dublin',
+                                    style: TextStyle(
+                                      color:Color.fromARGB(255, 78, 135, 226),
+                                      fontSize: 18.0,
+                                      fontWeight: FontWeight.bold,
                                     ),
                                   ),
+                                  Row(
+                                    children: const [
+                                      Text(
+                                        ' • conversation  • grammar  • reading',
+                                        style: TextStyle(
+                                          color: Colors.black54,
+                                          fontSize: 18.0,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ],
+                              ))
+                        ])))),
+        Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FittedBox(
+                child: Material(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(24.0),
+                    shadowColor: Colors.blue,
+                    elevation: 14.0,
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          SizedBox(
+                            width: 50.0,
+                            height: 100.0,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(24.0),
+                              child: const Icon(
+                                Icons.filter_drama_rounded,
+                                size: 50,
+                               color:Color.fromARGB(255, 78, 135, 226)
                               ),
-                            ],
+                            ),
                           ),
-                        ),
-                        Expanded(
-                          flex: 2,
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: <Widget>[
-                              Text(
-                                '',
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontFamily: 'Avenir',
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.w700),
+                          Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  const Text(
+                                    'Oracle University',
+                                    style: TextStyle(
+                                      color:Color.fromARGB(255, 78, 135, 226),
+                                      fontSize: 18.0,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Row(
+                                    children: const [
+                                      Text(
+                                        '• Oracle Cloud Infrastructure 2021 Architect',
+                                        style: TextStyle(
+                                          color: Colors.black54,
+                                          fontSize: 18.0,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ))
+                        ])))),
+        Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FittedBox(
+                child: Material(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(24.0),
+                    shadowColor: Colors.blue,
+                    elevation: 14.0,
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          SizedBox(
+                            width: 50.0,
+                            height: 100.0,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(24.0),
+                              child: const Icon(
+                                Icons.build_rounded ,
+                                size: 50,
+                                 color:Color.fromARGB(255, 78, 135, 226),
                               ),
-                            ],
+                            ),
                           ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        },
-      ),
-    );
+                          Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  const Text(
+                                    ' Escola SENAI "A. Jacob Lafer"',
+                                    style: TextStyle(
+                                       color:Color.fromARGB(255, 78, 135, 226),
+                                      fontSize: 24.0,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Row(
+                                    children: const [
+                                      Text(
+                                        '• Mechanical tecnology  • Mechanical Lathe Operations\n • technical drawing',
+                                        style: TextStyle(
+                                          color: Colors.black54,
+                                          fontSize: 18.0,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ))
+                        ])))),
+                        Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FittedBox(
+                child: Material(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(24.0),
+                    shadowColor: Colors.blue,
+                    elevation: 14.0,
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          SizedBox(
+                            width: 50.0,
+                            height: 100.0,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(24.0),
+                              child: const Icon(
+                                Icons.memory_rounded,
+                                size: 60,
+                                color:Color.fromARGB(255, 78, 135, 226),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  const Text(
+                                    'Tecnoponta',
+                                    style: TextStyle(
+                                      color:Color.fromARGB(255, 78, 135, 226),
+                                      fontSize: 28.0,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Row(
+                                    children: const [
+                                      Text(
+                                        '• Hardware (iPhone ,iPad) • iPhone Support • iPad Suppor',
+                                        style: TextStyle(
+                                          color: Colors.black54,
+                                          fontSize: 18.0,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ))
+                        ])))),
+       
+                        
+        Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FittedBox(
+                child: Material(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(24.0),
+                    shadowColor: Colors.blue,
+                    elevation: 14.0,
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          SizedBox(
+                            width: 50.0,
+                            height: 100.0,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(24.0),
+                              child: const Icon(
+                                Icons.account_balance_rounded,
+                                size: 40,
+                                 color:Color.fromARGB(255, 78, 135, 226),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  const Text(
+                                    'technologist',
+                                    style: TextStyle(
+                                       color:Color.fromARGB(255, 78, 135, 226),
+                                      fontSize: 24.0,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Row(
+                                    children: const [
+                                      Text(
+                                        '• Information Technology Management',
+                                        style: TextStyle(
+                                          color: Colors.black54,
+                                          fontSize: 18.0,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ))
+                        ])))),
+                         Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FittedBox(
+                child: Material(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(24.0),
+                    shadowColor: Colors.blue,
+                    elevation: 14.0,
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          SizedBox(
+                            width: 50.0,
+                            height: 100.0,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(24.0),
+                              child: const Icon(
+                                Icons.app_shortcut_rounded,
+                                size: 50,
+                                 color:Color.fromARGB(255, 78, 135, 226),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  const Text(
+                                    'Digital Marketing Professional Certificate',
+                                    style: TextStyle(
+                                      color:Color.fromARGB(255, 78, 135, 226),
+                                      fontSize: 24.0,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Row(
+                                    children: const [
+                                      Text(
+                                        '• Social Media Marketing  • User Experience and Usability',
+                                        style: TextStyle(
+                                          color: Colors.black54,
+                                          fontSize: 18.0,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ))
+                        ])))),
+        Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FittedBox(
+                child: Material(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(24.0),
+                    shadowColor: Colors.blue,
+                    elevation: 14.0,
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          SizedBox(
+                            width: 50.0,
+                            height: 100.0,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(24.0),
+                              child: const Icon(
+                                Icons.code,
+                                size: 50,
+                                 color:Color.fromARGB(255, 78, 135, 226),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  const Text(
+                                    'DevMedia',
+                                    style: TextStyle(
+                                     color:Color.fromARGB(255, 78, 135, 226),
+                                      fontSize: 24.0,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Row(
+                                    children: const [
+                                      Text(
+                                        'certificate: • Python  • Git • Dart • MVC • Flutter • HTML • CSS',
+                                        style: TextStyle(
+                                          color: Colors.black54,
+                                          fontSize: 18.0,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ))
+                        ])))),
+      ])
+    ]))));
   }
 }
-
