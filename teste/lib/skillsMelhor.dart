@@ -137,7 +137,9 @@ class _skillsMehorState extends State<skillsMehor> {
                                   children: [
                                     Image.asset('assets/sqlLogo.png',
                                         height: 90),
-                                         const Text("SQL"),
+                                         const Text("SQL",
+                                          style: TextStyle( fontWeight: FontWeight.bold,),
+                                         ),
                                   ],
                                 ),
                               ),
@@ -153,7 +155,9 @@ class _skillsMehorState extends State<skillsMehor> {
                                       'assets/linuxLogo.png',
                                       height: 80,
                                     ),
-                                    const Text("Linux"),
+                                    const Text("Linux",
+                                    style: TextStyle( fontWeight: FontWeight.bold,)
+                                    ),
                                   ],
                                 ),
                               ),
@@ -170,7 +174,9 @@ class _skillsMehorState extends State<skillsMehor> {
                                       'assets/awsLogo.jpeg',
                                       height: 40,
                                     ),
-                                    const Text("AWS Cloud"),
+                                    const Text("AWS Cloud",
+                                    style: TextStyle( fontWeight: FontWeight.bold,)
+                                    ),
                                   ],
                                 ),
                               ),
@@ -190,7 +196,8 @@ class _skillsMehorState extends State<skillsMehor> {
                                   children: [
                                     Image.asset('assets/htmlLogo.jpeg',
                                         height: 50),
-                                    const Text("HTML")
+                                    const Text("HTML",
+                                    style: TextStyle( fontWeight: FontWeight.bold,),)
                                   ],
                                 ),
                               ),
@@ -205,7 +212,8 @@ class _skillsMehorState extends State<skillsMehor> {
                                   children: [
                                     Image.asset('assets/cssLogo.png',
                                         height: 90),
-                                    const Text("CSS")
+                                    const Text("CSS",
+                                    style: TextStyle( fontWeight: FontWeight.bold,),)
                                   ],
                                 ),
                               ),
@@ -221,7 +229,8 @@ class _skillsMehorState extends State<skillsMehor> {
                                       'assets/swagerAPILogo.png',
                                       height: 60,
                                     ),
-                                    const Text("swager API"),
+                                    const Text("swager API",
+                                    style: TextStyle( fontWeight: FontWeight.bold,)),
                                   ],
                                 ),
                               ),
@@ -238,7 +247,8 @@ class _skillsMehorState extends State<skillsMehor> {
                                       'assets/scrumLogo.png',
                                       height: 70,
                                     ),
-                                    const Text("Scrum"),
+                                    const Text("Scrum", 
+                                    style: TextStyle( fontWeight: FontWeight.bold,)),
                                   ],
                                 ),
                               ),
@@ -255,7 +265,8 @@ class _skillsMehorState extends State<skillsMehor> {
                                       'assets/kubernetesLogo.png',
                                       height: 60,
                                     ),
-                                    const Text("Kubernetes"),
+                                    const Text("Kubernetes",
+                                    style: TextStyle( fontWeight: FontWeight.bold,)),
                                   ],
                                 ),
                               ),
