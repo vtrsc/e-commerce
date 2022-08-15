@@ -51,7 +51,7 @@ class _educationState extends State<education> {
                       },
                     ),
                     SizedBox(
-                      width: 55,
+                      width: 54,
                     ),
                     Text(
                       "   Education",
