@@ -69,7 +69,7 @@ class profile extends StatelessWidget {
 
   
   Container(
-    margin: EdgeInsets.fromLTRB(2, 150, 2, 0),
+    margin: const EdgeInsets.fromLTRB(2, 253, 2, 0),
     child:
       SingleChildScrollView(
         child: Container(

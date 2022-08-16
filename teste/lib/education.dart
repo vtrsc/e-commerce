@@ -54,7 +54,7 @@ class _educationState extends State<education> {
                       width: 54,
                     ),
                     Text(
-                      "   Education",
+                      "    Education",
                       style: TextStyle(
                         fontSize: 30,
                         fontWeight: FontWeight.bold,
