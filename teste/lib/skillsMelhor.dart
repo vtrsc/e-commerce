@@ -19,8 +19,8 @@ class _skillsMehorState extends State<skillsMehor> {
         decoration: BoxDecoration(
             gradient: LinearGradient(
           colors: <Color>[
-            Color.fromARGB(255, 15, 23, 173).withOpacity(0.8),
-            Color.fromARGB(255, 15, 133, 232).withOpacity(0.9)
+            Color.fromARGB(103, 59, 112, 121).withOpacity(0.8),
+                  Color.fromARGB(255,0, 1, 64).withOpacity(0.9)
           ],
           
         )),

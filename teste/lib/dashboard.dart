@@ -103,7 +103,8 @@ class MyDashboard extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: const [
                                     Icon(Icons.person,
-                                        size: 70, color:Color.fromARGB(255,0, 1, 64)),
+                                        size: 70,
+                                        color:Color.fromARGB(255,0, 1, 64)),
                                     Text("Profile",
                                      style: TextStyle( fontWeight: FontWeight.bold,)),
                                   ],
