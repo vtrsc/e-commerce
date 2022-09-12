@@ -88,6 +88,12 @@ flutter:
     -  assets/xadrez.png
     -  assets/climaTempo.PNG
     -  assets/portifolio.jpg
+    -  assets/face.png
+    -  assets/insta.png
+    -  assets/gitHub.png
+    -  assets/spotify.png
+    -  assets/linkedin.png
+    -  assets/twitter.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
