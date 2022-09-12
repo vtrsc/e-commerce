@@ -29,8 +29,8 @@ class MyDashboard extends StatelessWidget {
               decoration: BoxDecoration(
                   gradient: LinearGradient(
                 colors: <Color>[
-                  Color.fromARGB(255, 15, 23, 173).withOpacity(0.8),
-                  Color.fromARGB(255, 15, 133, 232).withOpacity(0.9)
+                  Color.fromARGB(103, 59, 112, 121).withOpacity(0.8),
+                  Color.fromARGB(255,0, 1, 64).withOpacity(0.9)
                 ],
               )),
             ),
@@ -103,7 +103,7 @@ class MyDashboard extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: const [
                                     Icon(Icons.person,
-                                        size: 70, color:Color.fromARGB(255, 78, 135, 226)),
+                                        size: 70, color:Color.fromARGB(255,0, 1, 64)),
                                     Text("Profile",
                                      style: TextStyle( fontWeight: FontWeight.bold,)),
                                   ],
@@ -129,7 +129,7 @@ class MyDashboard extends StatelessWidget {
                                     Icon(
                                       Icons.work,
                                       size: 70,
-                                      color:Color.fromARGB(255, 78, 135, 226)
+                                      color:Color.fromARGB(255,0, 1, 64)
                                     ),
                                     Text("Work",
                                      style: TextStyle( fontWeight: FontWeight.bold,)),
@@ -156,7 +156,7 @@ class MyDashboard extends StatelessWidget {
                                     Icon(
                                       Icons.school_rounded,
                                       size: 70,
-                                     color:Color.fromARGB(255, 78, 135, 226)
+                                     color   :     Color.fromARGB(103, 77, 174, 189)
                                     ),
                                     Text("Education",
                                      style: TextStyle( fontWeight: FontWeight.bold,)),
@@ -183,7 +183,7 @@ class MyDashboard extends StatelessWidget {
                                     Icon(
                                       Icons.engineering,
                                       size: 70,
-                                      color: Color.fromARGB(255, 78, 135, 226),
+                                      color:Color.fromARGB(255,0, 1, 64),
                                     ),
                                     Text("Skills",
                                      style: TextStyle( fontWeight: FontWeight.bold,)),
@@ -202,15 +202,14 @@ class MyDashboard extends StatelessWidget {
                                 MaterialPageRoute(
                                     builder: (context) => const midiaSocial()),
                               ),
-                               splashColor:  Color.fromARGB(255, 20, 105, 244),
+                               splashColor:  Color.fromARGB(255,  255 ,230, 0),
                               child: Center(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: const [
                                     Icon(
                                       Icons.favorite,
-                                      size: 70,color: Color.fromARGB(255, 78, 135, 226),
-                                    ),
+                                      size: 70,color: Color.fromARGB(255,0, 1, 64),),
                                     Text("Midia Social",
                                      style: TextStyle( fontWeight: FontWeight.bold,)),
                                   ],

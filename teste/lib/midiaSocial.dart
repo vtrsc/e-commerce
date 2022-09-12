@@ -36,13 +36,14 @@ class _midiaSocialState extends State<midiaSocial> {
         splitFunction: (Size size, double x) {
           // normalizing x to make it exactly one wave
           final normalizedX = x / size.width * 2 * pi;
-          final waveHeight = size.height / 15;
+          final waveHeight = size.height / 30;
           final y = size.height / 2 - sin(normalizedX) * waveHeight;
 
           return y;
         },
       ),
       Container(
+        
         margin: EdgeInsets.fromLTRB(5, 50, 25, 0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -77,37 +78,140 @@ class _midiaSocialState extends State<midiaSocial> {
         ),
       ),
       Container(
-        margin: EdgeInsets.fromLTRB(150, 270, 50, 20),
+        
+         margin: EdgeInsets.all(40),
+        
+        
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+  crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Padding(padding: const EdgeInsets.symmetric(horizontal: 6)),
-            ElevatedButton(
+            SingleChildScrollView(
+              child: (
+                Column(
+
+                  
+                  children:[
+
+                    
+          TextButton.icon(
+              
+           
+              icon: Image.asset('assets/face.png',
+              height: 60,
+        
+              ),
+                 label: Text("Faceboock",
+                  style: TextStyle(
+                   color: Color.fromARGB(174, 0, 0, 0),
+                    fontSize: 20,
+                  ),
+                ),
+              style: ElevatedButton.styleFrom(
+                
+                fixedSize: Size(300, 100)
+              ),
+              
               onPressed: () {},
-              child: Text("faceboock"),
-            ),
-            ElevatedButton(
+               
+              
+              ),
+                 TextButton.icon(
+              icon: Image.asset('assets/twitter.png',
+               height: 60,
+              ),
+               label: Text("Twitter", 
+               style: TextStyle(
+           color: Color.fromARGB(174, 0, 0, 0),
+                    fontSize: 20,
+                  ),
+               ),
+              style: ElevatedButton.styleFrom(
+                fixedSize: Size(300, 100)
+              ),
               onPressed: () {},
-              child: Text("Intagram"),
-            ),
-            ElevatedButton(
+               
+              
+              ),
+               TextButton.icon(
+              icon: Image.asset('assets/gitHub.png',
+               height: 60,
+              ),
+               label: Text("GitHub", 
+               style: TextStyle(
+               color: Color.fromARGB(174, 0, 0, 0),
+                    fontSize: 20,
+                  ),
+               ),
+              style: ElevatedButton.styleFrom(
+                fixedSize: Size(300, 100)
+              ),
               onPressed: () {},
-              child: Text("twitter"),
-            ),
-            ElevatedButton(
+               
+              
+              ),
+            
+       
+              TextButton.icon(
+              icon: Image.asset('assets/insta.png',
+               height: 60,
+              ),
+               label: Text("Instagram", 
+               style: TextStyle(
+             color: Color.fromARGB(174, 0, 0, 0),
+                    fontSize: 20,
+                  ),
+               ),
+              style: ElevatedButton.styleFrom(
+                fixedSize: Size(300, 100)
+              ),
               onPressed: () {},
-              child: Text("YouTube"),
-            ),
-            ElevatedButton(
+               
+              
+              ),
+            TextButton.icon(
+              icon: Image.asset('assets/spotify.png',
+               height: 60,
+              ),
+               label: Text("Spotify", 
+               style: TextStyle(
+                color: Color.fromARGB(174, 0, 0, 0),
+                    fontSize: 20,
+                  ),
+               ),
+              style: ElevatedButton.styleFrom(
+                fixedSize: Size(300, 100)
+              ),
               onPressed: () {},
-              child: Text("Spotify"),
-            ),
-            ElevatedButton(
+               
+              
+              ),
+             TextButton.icon(
+              icon: Image.asset('assets/linkedin.png',
+               height: 60,
+              ),
+               label: Text("Linkedin", 
+               style: TextStyle(
+                color: Color.fromARGB(174, 0, 0, 0),
+                    fontSize: 20,
+                  ),
+               ),
+              style: ElevatedButton.styleFrom(
+                fixedSize: Size(300, 100)
+              ),
               onPressed: () {},
-              child: Text("Linkdin"),
-            ),
+               
+              
+              ),
+          
           ],
-        ),
+              )),
       )
-    ]));
+    ]
+          )
+        )
+        ]
+        ));
+
   }
 }
