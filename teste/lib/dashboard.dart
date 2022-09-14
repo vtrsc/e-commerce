@@ -103,7 +103,8 @@ class MyDashboard extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: const [
                                     Icon(Icons.person,
-                                        size: 70, color:Color.fromARGB(255,0, 1, 64)),
+                                        size: 70,
+                                        color:Color.fromARGB(255,0, 1, 64)),
                                     Text("Profile",
                                      style: TextStyle( fontWeight: FontWeight.bold,)),
                                   ],
@@ -156,7 +157,7 @@ class MyDashboard extends StatelessWidget {
                                     Icon(
                                       Icons.school_rounded,
                                       size: 70,
-                                     color   :     Color.fromARGB(103, 77, 174, 189)
+                                    color:Color.fromARGB(255,0, 1, 64)
                                     ),
                                     Text("Education",
                                      style: TextStyle( fontWeight: FontWeight.bold,)),
@@ -235,7 +236,7 @@ class MyDashboard extends StatelessWidget {
                                     Icon(
                                       Icons.folder_rounded,
                                       size: 70,
-                                     color: Color.fromARGB(255, 78, 135, 226),
+                                    color:Color.fromARGB(255,0, 1, 64)
                                     ),
                                     Text("Project",
                                      style: TextStyle( fontWeight: FontWeight.bold,)),
