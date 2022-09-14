@@ -19,8 +19,9 @@ class profile extends StatelessWidget {
               decoration: BoxDecoration(
                   gradient: LinearGradient(
                 colors: <Color>[ 
-                   Color.fromARGB(255, 15, 23, 173).withOpacity(0.8),
-            Color.fromARGB(255, 15, 133, 232).withOpacity(0.9)],
+                 Color.fromARGB(103, 59, 112, 121).withOpacity(0.8),
+                  Color.fromARGB(255,0, 1, 64).withOpacity(0.9)
+                  ]
               )),
             ),
           ),
@@ -66,7 +67,18 @@ class profile extends StatelessWidget {
         ),
       ),
 
-
+ Center(
+              child: Column(
+            children: [
+              SizedBox(
+                height: 120,
+              ),
+              CircleAvatar(
+                radius: 60,
+                backgroundImage: AssetImage('assets/photo.jpg'),
+              ),
+            ],
+          )),
   
   Container(
     margin: const EdgeInsets.fromLTRB(2, 253, 2, 0),

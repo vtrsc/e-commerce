@@ -18,82 +18,69 @@ class _midiaSocialState extends State<midiaSocial> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Stack(
-          children: [
-      ClippedPartsWidget(
-        top: Container(
-          color: Colors.white,
-        ),
-        bottom: Container(
-          decoration: BoxDecoration(
-              gradient: LinearGradient(
-            colors: <Color>[
-              Color.fromARGB(255, 15, 23, 173).withOpacity(0.8),
-              Color.fromARGB(255, 15, 133, 232).withOpacity(0.9)
-            ],
-          )),
-        ),
-        splitFunction: (Size size, double x) {
-          // normalizing x to make it exactly one wave
-          final normalizedX = x / size.width * 2 * pi;
-          final waveHeight = size.height / 30;
-          final y = size.height / 2 - sin(normalizedX) * waveHeight;
+       
+        body: SingleChildScrollView(
+          
+            child: Column(
+              
+              children: [
 
-          return y;
-        },
-      ),
-      Container(
-        
-        margin: EdgeInsets.fromLTRB(5, 50, 25, 0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            IconButton(
-              icon: const Icon(Icons.arrow_back_ios),
-              color: Color.fromARGB(255, 0, 0, 0),
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => MyDashboard()));
-              },
-            ),
-            SizedBox(
-              width: 55,
-            ),
-            Text(
-              "Midia Social",
-              style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  foreground: Paint()
-                    ..shader = LinearGradient(
-                      colors: <Color>[
-                        Color.fromARGB(255, 15, 23, 173).withOpacity(0.8),
-                        Color.fromARGB(255, 15, 133, 232).withOpacity(0.9)
-                      ],
+                
+                 Container(
+              
+                  width: 800,
+                  height: 800,
+                        decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                colors: <Color>[
+                  Color.fromARGB(40, 0, 0, 0).withOpacity(0.8),
+                  Color.fromARGB(225, 68, 68, 68).withOpacity(0.9)
+                ],
+              )),
+         
 
-                      //add more color here.
-                    ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 100.0))),
-            )
-          ],
-        ),
-      ),
-      Container(
-        
-         margin: EdgeInsets.all(40),
+         
         
         
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
   crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            SingleChildScrollView(
-              child: (
-                Column(
-
+          
                   
                   children:[
 
-                    
+      Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            
+            children: [
+              Row(
+               
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.arrow_back_ios),
+                    color: Color.fromARGB(255, 255, 255, 255),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => MyDashboard()));
+                    },
+                  ),
+                  SizedBox( width: 55),
+                  Text(
+                    "     Projects",
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(255, 255, 255, 255),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+                
+                SizedBox(height: 40,),         
           TextButton.icon(
               
            
@@ -203,15 +190,18 @@ class _midiaSocialState extends State<midiaSocial> {
                
               
               ),
+
+        
           
           ],
               )),
-      )
-    ]
+              ],
+            ),
+    
           )
-        )
-        ]
-        ));
+        );
+        
+      
 
   }
 }
