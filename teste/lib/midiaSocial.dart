@@ -86,7 +86,7 @@ class _midiaSocialState extends State<midiaSocial> {
               icon: Image.asset('assets/twitter.png',
                height: 60,
               ),
-               label: Text("Twitter", 
+               label: Text("  Twitter", 
                style: TextStyle(
            color: Color.fromARGB(174, 0, 0, 0),
                     fontSize: 20,
@@ -103,7 +103,7 @@ class _midiaSocialState extends State<midiaSocial> {
               icon: Image.asset('assets/gitHub.png',
                height: 60,
               ),
-               label: Text("GitHub", 
+               label: Text("  GitHub", 
                style: TextStyle(
                color: Color.fromARGB(174, 0, 0, 0),
                     fontSize: 20,
@@ -139,7 +139,7 @@ class _midiaSocialState extends State<midiaSocial> {
               icon: Image.asset('assets/spotify.png',
                height: 60,
               ),
-               label: Text("Spotify", 
+               label: Text("    Spotify", 
                style: TextStyle(
                 color: Color.fromARGB(174, 0, 0, 0),
                     fontSize: 20,
@@ -156,7 +156,7 @@ class _midiaSocialState extends State<midiaSocial> {
               icon: Image.asset('assets/linkedin.png',
                height: 60,
               ),
-               label: Text("Linkedin", 
+               label: Text("  Linkedin", 
                style: TextStyle(
                 color: Color.fromARGB(174, 0, 0, 0),
                     fontSize: 20,
