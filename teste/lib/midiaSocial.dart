@@ -81,28 +81,7 @@ class _midiaSocialState extends State<midiaSocial> {
           ),
                 
                 SizedBox(height: 40,),         
-          TextButton.icon(
-              
-           
-              icon: Image.asset('assets/face.png',
-              height: 60,
         
-              ),
-                 label: Text("Faceboock",
-                  style: TextStyle(
-                   color: Color.fromARGB(174, 0, 0, 0),
-                    fontSize: 20,
-                  ),
-                ),
-              style: ElevatedButton.styleFrom(
-                
-                fixedSize: Size(300, 100)
-              ),
-              
-              onPressed: () {},
-               
-              
-              ),
                  TextButton.icon(
               icon: Image.asset('assets/twitter.png',
                height: 60,
