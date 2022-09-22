@@ -28,13 +28,13 @@ class _midiaSocialState extends State<midiaSocial> {
                 
                  Container(
               
-                  width: 800,
-                  height: 800,
+                  width: 999,
+                  height: 850,
                         decoration: BoxDecoration(
                   gradient: LinearGradient(
                 colors: <Color>[
-                  Color.fromARGB(40, 0, 0, 0).withOpacity(0.8),
-                  Color.fromARGB(225, 68, 68, 68).withOpacity(0.9)
+                  Color.fromARGB(255, 17 ,24 ,39),
+                  Color.fromARGB(255, 17 ,24 ,39)
                 ],
               )),
          
@@ -44,7 +44,7 @@ class _midiaSocialState extends State<midiaSocial> {
         
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-  crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           
                   
                   children:[
@@ -68,7 +68,7 @@ class _midiaSocialState extends State<midiaSocial> {
                   ),
                   SizedBox( width: 55),
                   Text(
-                    "     Projects",
+                    "  Midia Social",
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
