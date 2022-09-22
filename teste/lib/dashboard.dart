@@ -29,8 +29,8 @@ class MyDashboard extends StatelessWidget {
               decoration: BoxDecoration(
                   gradient: LinearGradient(
                 colors: <Color>[
-                  Color.fromARGB(103, 59, 112, 121).withOpacity(0.8),
-                  Color.fromARGB(255,0, 1, 64).withOpacity(0.9)
+                 Color.fromARGB(255, 17 ,24 ,39),
+                 Color.fromARGB(255, 54, 67, 95)
                 ],
               )),
             ),
@@ -41,6 +41,7 @@ class MyDashboard extends StatelessWidget {
                 SizedBox(
                   height: 40,
                 ),
+              
                 Text(
                   "Vitor Cicote ",
                   style: TextStyle(
@@ -49,15 +50,16 @@ class MyDashboard extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                Text(
+
+                   Text(
                   "Developer",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
-                ),
-              ],
+            )
+            ],
             ),
           ),
           Center(
@@ -203,7 +205,7 @@ class MyDashboard extends StatelessWidget {
                                 MaterialPageRoute(
                                     builder: (context) => const midiaSocial()),
                               ),
-                               splashColor:  Color.fromARGB(255,  255 ,230, 0),
+                               splashColor:  Color.fromARGB(255, 0, 153, 255),
                               child: Center(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
