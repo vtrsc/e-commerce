@@ -80,15 +80,15 @@ class _midiaSocialState extends State<midiaSocial> {
             ],
           ),
                 
-                SizedBox(height: 40,),         
-        
+                SizedBox(height: 40,),    
+
                  TextButton.icon(
-              icon: Image.asset('assets/twitter.png',
+              icon: Image.asset('assets/linkedin.png',
                height: 60,
               ),
-               label: Text("  Twitter", 
+               label: Text(" Linkedin", 
                style: TextStyle(
-           color: Color.fromARGB(174, 0, 0, 0),
+                color: Color.fromARGB(173, 255, 255, 255),
                     fontSize: 20,
                   ),
                ),
@@ -98,14 +98,15 @@ class _midiaSocialState extends State<midiaSocial> {
               onPressed: () {},
                
               
-              ),
-               TextButton.icon(
+              ), 
+
+              TextButton.icon(
               icon: Image.asset('assets/gitHub.png',
-               height: 60,
+               height: 95,
               ),
-               label: Text("  GitHub", 
+               label: Text("GitHub", 
                style: TextStyle(
-               color: Color.fromARGB(174, 0, 0, 0),
+               color: Color.fromARGB(173, 255, 255, 255),
                     fontSize: 20,
                   ),
                ),
@@ -117,14 +118,32 @@ class _midiaSocialState extends State<midiaSocial> {
               
               ),
             
-       
-              TextButton.icon(
+
+                TextButton.icon(
               icon: Image.asset('assets/insta.png',
                height: 60,
               ),
-               label: Text("Instagram", 
+               label: Text(" Instagram", 
                style: TextStyle(
-             color: Color.fromARGB(174, 0, 0, 0),
+             color: Color.fromARGB(173, 255, 255, 255),
+                    fontSize: 20,
+                  ),
+               ),
+              style: ElevatedButton.styleFrom(
+                fixedSize: Size(300, 100)
+              ),
+              onPressed: () {},
+               
+              
+              ),   
+        
+                 TextButton.icon(
+              icon: Image.asset('assets/twitter.png',
+               height: 60,
+              ),
+               label: Text(" Twitter", 
+               style: TextStyle(
+           color: Color.fromARGB(173, 255, 255, 255),
                     fontSize: 20,
                   ),
                ),
@@ -135,13 +154,16 @@ class _midiaSocialState extends State<midiaSocial> {
                
               
               ),
+               
+       
+            
             TextButton.icon(
               icon: Image.asset('assets/spotify.png',
                height: 60,
               ),
-               label: Text("    Spotify", 
+               label: Text(" Spotify", 
                style: TextStyle(
-                color: Color.fromARGB(174, 0, 0, 0),
+                color: Color.fromARGB(173, 255, 255, 255),
                     fontSize: 20,
                   ),
                ),
@@ -152,23 +174,7 @@ class _midiaSocialState extends State<midiaSocial> {
                
               
               ),
-             TextButton.icon(
-              icon: Image.asset('assets/linkedin.png',
-               height: 60,
-              ),
-               label: Text("  Linkedin", 
-               style: TextStyle(
-                color: Color.fromARGB(174, 0, 0, 0),
-                    fontSize: 20,
-                  ),
-               ),
-              style: ElevatedButton.styleFrom(
-                fixedSize: Size(300, 100)
-              ),
-              onPressed: () {},
-               
-              
-              ),
+            
 
         
           
