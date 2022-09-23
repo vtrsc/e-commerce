@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:teste/MyClipper.dart';
-import 'package:teste/MyClipper2.dart';
+
 import 'package:teste/ShapeDashboard.dart';
 import 'package:teste/dashboard.dart';
 

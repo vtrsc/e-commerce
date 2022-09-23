@@ -1,14 +1,13 @@
-import 'dart:ffi';
+
 
 import 'package:flutter/material.dart';
 import 'package:teste/MyClipper.dart';
+
 import 'package:teste/education.dart';
 import 'package:teste/midiaSocial.dart';
 import 'package:teste/profile.dart';
-import 'package:teste/ShapeDashboard.dart';
-import 'package:teste/projects.dart';
-import 'package:teste/projects2.dart';
 
+import 'package:teste/projects2.dart';
 import 'package:teste/skillsMelhor.dart';
 import 'package:teste/work.dart';
 

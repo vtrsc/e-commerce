@@ -1,13 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/animation/animation_controller.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/ticker_provider.dart';
-import 'package:teste/MyClipper.dart';
 import 'package:teste/MyClipper2.dart';
 import 'package:teste/dashboard.dart';
-import 'package:teste/profile.dart';
-import 'package:teste/skillsMelhor.dart';
+
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_print
 class projects extends StatefulWidget {
   const projects({Key? key}) : super(key: key);
