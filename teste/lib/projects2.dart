@@ -35,8 +35,8 @@ class _projects2State extends State<projects2> {
               decoration: BoxDecoration(
                   gradient: LinearGradient(
                 colors: <Color>[ 
-               Color.fromARGB(103, 59, 112, 121).withOpacity(0.8),
-                  Color.fromARGB(255,0, 1, 64).withOpacity(0.9)
+                Color.fromARGB(255, 17 ,24 ,39),
+                 Color.fromARGB(255, 54, 67, 95)
                 ]
               )),
            

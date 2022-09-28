@@ -26,8 +26,8 @@ class _workState extends State<work> {
             decoration: BoxDecoration(
                 gradient: LinearGradient(
               colors: <Color>[
-                Color.fromARGB(103, 59, 112, 121).withOpacity(0.8),
-                  Color.fromARGB(255,0, 1, 64).withOpacity(0.9)
+                Color.fromARGB(255, 17 ,24 ,39),
+                 Color.fromARGB(255, 54, 67, 95)
               ],
             )),
             child: Column(
@@ -80,7 +80,7 @@ class _workState extends State<work> {
                               borderRadius: BorderRadius.circular(24.0),
                               child: const Icon(Icons.phone_android,
                                   size: 50,
-                                  color: Color.fromARGB(255, 78, 135, 226)),
+                                 color:Color.fromARGB(255, 50, 71, 115),),
                             ),
                           ),
                           Padding(
@@ -91,7 +91,7 @@ class _workState extends State<work> {
                                   const Text(
                                     'Mobile Developer',
                                     style: TextStyle(
-                                      color: Color.fromARGB(255, 78, 135, 226),
+                                      color:Color.fromARGB(255, 50, 71, 115),
                                       fontSize: 24.0,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -130,7 +130,7 @@ class _workState extends State<work> {
                               child: const Icon(
                                 Icons.desktop_windows_outlined,
                                 size: 50,
-                                color: Color.fromARGB(255, 78, 135, 226),
+                               color:Color.fromARGB(255, 50, 71, 115),
                               ),
                             ),
                           ),
@@ -142,7 +142,7 @@ class _workState extends State<work> {
                                   const Text(
                                     'Web Developer',
                                     style: TextStyle(
-                                      color: Color.fromARGB(255, 78, 135, 226),
+                                     color:Color.fromARGB(255, 50, 71, 115),
                                       fontSize: 24.0,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -180,7 +180,7 @@ class _workState extends State<work> {
                               child: const Icon(
                                 Icons.gpp_good_rounded,
                                 size: 50,
-                                color: Color.fromARGB(255, 78, 135, 226),
+                               color:Color.fromARGB(255, 50, 71, 115),
                               ),
                             ),
                           ),
@@ -192,7 +192,7 @@ class _workState extends State<work> {
                                   const Text(
                                     'Code Tester',
                                     style: TextStyle(
-                                      color: Color.fromARGB(255, 78, 135, 226),
+                                     color:Color.fromARGB(255, 50, 71, 115),
                                       fontSize: 24.0,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -230,7 +230,7 @@ class _workState extends State<work> {
                               child: const Icon(
                                 Icons.apple_outlined,
                                 size: 50,
-                                color: Color.fromARGB(255, 78, 135, 226),
+                                color:Color.fromARGB(255, 50, 71, 115),
                               ),
                             ),
                           ),
@@ -242,7 +242,7 @@ class _workState extends State<work> {
                                   const Text(
                                     'Apple Hardware',
                                     style: TextStyle(
-                                      color: Color.fromARGB(255, 78, 135, 226),
+                                     color:Color.fromARGB(255, 50, 71, 115),
                                       fontSize: 24.0,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -280,7 +280,7 @@ class _workState extends State<work> {
                               child: const Icon(
                                 Icons.pets_rounded,
                                 size: 50,
-                                color: Color.fromARGB(255, 78, 135, 226),
+                               color:Color.fromARGB(255, 50, 71, 115),
                               ),
                             ),
                           ),
@@ -292,7 +292,7 @@ class _workState extends State<work> {
                                   const Text(
                                     'Collaborator and Volunteer Amigo Animal -ABC',
                                     style: TextStyle(
-                                      color: Color.fromARGB(255, 78, 135, 226),
+                                     color:Color.fromARGB(255, 50, 71, 115),
                                       fontSize: 24.0,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -330,7 +330,7 @@ class _workState extends State<work> {
                               child: const Icon(
                                 Icons.restaurant,
                                 size: 40,
-                                color: Color.fromARGB(255, 78, 135, 226),
+                               color:Color.fromARGB(255, 50, 71, 115),
                               ),
                             ),
                           ),
@@ -342,7 +342,7 @@ class _workState extends State<work> {
                                   const Text(
                                     'Waiter',
                                     style: TextStyle(
-                                      color: Color.fromARGB(255, 78, 135, 226),
+                                      color:Color.fromARGB(255, 50, 71, 115),
                                       fontSize: 24.0,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -380,7 +380,7 @@ class _workState extends State<work> {
                               child: const Icon(
                                 Icons.emoji_people_rounded,
                                 size: 50,
-                                color: Color.fromARGB(255, 78, 135, 226),
+                              color:Color.fromARGB(255, 50, 71, 115),
                               ),
                             ),
                           ),
@@ -392,7 +392,7 @@ class _workState extends State<work> {
                                   const Text(
                                     'Dev Conference - Volunteer',
                                     style: TextStyle(
-                                      color: Color.fromARGB(255, 78, 135, 226),
+                                      color:Color.fromARGB(255, 50, 71, 115),
                                       fontSize: 24.0,
                                       fontWeight: FontWeight.bold,
                                     ),
