@@ -78,7 +78,7 @@ class MyDashboard extends StatelessWidget {
               padding: const EdgeInsets.only(top: 40.0),
               child: Column(
                 children: [
-                  const SizedBox(height: 160),
+                  const SizedBox(height: 200),
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.all(20.0),
@@ -88,6 +88,9 @@ class MyDashboard extends StatelessWidget {
                         crossAxisSpacing: 10,
                         primary: false,
                         children: [
+                        
+                        
+                        
                           Card(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20),
@@ -96,24 +99,26 @@ class MyDashboard extends StatelessWidget {
                               onTap: () => Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => profile()),
+                                    builder: (context) => const skillsMehor()),
                               ),
-                              splashColor: Color.fromARGB(255, 103, 154, 235),
+                              splashColor:  Color.fromARGB(255, 50, 71, 115),
                               child: Center(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: const [
-                                    Icon(Icons.person,
-                                        size: 70,
-                                        color:Color.fromARGB(255, 50, 71, 115,)),
-                                    Text("Profile",
+                                    Icon(
+                                      Icons.engineering,
+                                      size: 70,
+                                      color:Color.fromARGB(255, 50, 71, 115),
+                                    ),
+                                    Text("Skills",
                                      style: TextStyle( fontWeight: FontWeight.bold,)),
                                   ],
                                 ),
                               ),
                             ),
                           ),
-                          Card(
+                            Card(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
@@ -140,7 +145,7 @@ class MyDashboard extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Card(
+                            Card(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
@@ -148,46 +153,19 @@ class MyDashboard extends StatelessWidget {
                               onTap: () => Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => education()),
+                                    builder: (context) => projects2()),
                               ),
-                              splashColor:  Color.fromARGB(255, 50, 71, 115),
+                               splashColor:  Color.fromARGB(255, 50, 71, 115),
                               child: Center(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: const [
                                     Icon(
-                                      Icons.school_rounded,
+                                      Icons.folder_rounded,
                                       size: 70,
                                     color:Color.fromARGB(255, 50, 71, 115)
                                     ),
-                                    Text("Education",
-                                     style: TextStyle( fontWeight: FontWeight.bold,)),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
-                          Card(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: InkWell(
-                              onTap: () => Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => const skillsMehor()),
-                              ),
-                              splashColor:  Color.fromARGB(255, 50, 71, 115),
-                              child: Center(
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: const [
-                                    Icon(
-                                      Icons.engineering,
-                                      size: 70,
-                                      color:Color.fromARGB(255, 50, 71, 115),
-                                    ),
-                                    Text("Skills",
+                                    Text("Project",
                                      style: TextStyle( fontWeight: FontWeight.bold,)),
                                   ],
                                 ),
@@ -219,33 +197,7 @@ class MyDashboard extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Card(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: InkWell(
-                              onTap: () => Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => projects2()),
-                              ),
-                               splashColor:  Color.fromARGB(255, 50, 71, 115),
-                              child: Center(
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: const [
-                                    Icon(
-                                      Icons.folder_rounded,
-                                      size: 70,
-                                    color:Color.fromARGB(255, 50, 71, 115)
-                                    ),
-                                    Text("Project",
-                                     style: TextStyle( fontWeight: FontWeight.bold,)),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
+                        
                         ],
                       ),
                     ),
