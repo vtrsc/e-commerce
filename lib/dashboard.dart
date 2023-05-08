@@ -107,7 +107,7 @@ class MyDashboard extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: const [
                                     Icon(
-                                      Icons.engineering,
+                                      Icons.add_location_alt_outlined,
                                       size: 70,
                                       color:Color.fromARGB(255, 50, 71, 115),
                                     ),
