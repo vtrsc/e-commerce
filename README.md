@@ -1,6 +1,5 @@
 Read.me
-
-A new Flutter project.
+E-commerce page example for sell code and support.
 
 ## Getting Started
 
