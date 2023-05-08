@@ -42,7 +42,7 @@ class MyDashboard extends StatelessWidget {
                 ),
               
                 Text(
-                  "Vitor Cicote ",
+                  "e-commerce ",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 30,
@@ -51,7 +51,7 @@ class MyDashboard extends StatelessWidget {
                 ),
 
                    Text(
-                  "Developer",
+                  "",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
